@@ -234,7 +234,7 @@ QToolBox::tab {
                   <x>0</x>
                   <y>0</y>
                   <width>200</width>
-                  <height>587</height>
+                  <height>594</height>
                  </rect>
                 </property>
                 <attribute name="icon">
@@ -346,7 +346,7 @@ QToolBox::tab {
                   <x>0</x>
                   <y>0</y>
                   <width>200</width>
-                  <height>587</height>
+                  <height>594</height>
                  </rect>
                 </property>
                 <attribute name="icon">
@@ -665,10 +665,16 @@ QToolBox::tab {
             <layout class="QVBoxLayout" name="verticalLayout_10">
              <item>
               <widget class="QFrame" name="frame_14">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>240</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
-                 <width>16777215</width>
-                 <height>200</height>
+                 <width>16777213</width>
+                 <height>240</height>
                 </size>
                </property>
                <property name="styleSheet">
@@ -777,6 +783,12 @@ border-radius: 5px;</string>
                 </item>
                 <item>
                  <widget class="QFrame" name="frame_19">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
@@ -1040,7 +1052,7 @@ border-radius: 5px;</string>
                         <property name="maximumSize">
                          <size>
                           <width>16777215</width>
-                          <height>35</height>
+                          <height>40</height>
                          </size>
                         </property>
                         <property name="styleSheet">
@@ -1176,7 +1188,7 @@ border-radius: 5px;</string>
                         <property name="maximumSize">
                          <size>
                           <width>16777215</width>
-                          <height>35</height>
+                          <height>40</height>
                          </size>
                         </property>
                         <property name="styleSheet">
@@ -1257,10 +1269,16 @@ border-radius: 5px;</string>
             <layout class="QVBoxLayout" name="verticalLayout_9">
              <item>
               <widget class="QFrame" name="frame_12">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>240</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
-                 <height>200</height>
+                 <height>240</height>
                 </size>
                </property>
                <property name="styleSheet">

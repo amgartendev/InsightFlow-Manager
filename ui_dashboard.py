@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardVuUEEC.ui'
+## Form generated from reading UI file 'dashboardgDVTlL.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.6.0
+## Created by: Qt User Interface Compiler version 6.6.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -124,7 +124,7 @@ class Ui_MainWindow(object):
 "}")
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        self.page_3.setGeometry(QRect(0, 0, 200, 587))
+        self.page_3.setGeometry(QRect(0, 0, 200, 594))
         self.verticalLayout_4 = QVBoxLayout(self.page_3)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
@@ -172,7 +172,7 @@ class Ui_MainWindow(object):
         self.toolBox.addItem(self.page_3, icon4, u"Employees")
         self.page_4 = QWidget()
         self.page_4.setObjectName(u"page_4")
-        self.page_4.setGeometry(QRect(0, 0, 200, 587))
+        self.page_4.setGeometry(QRect(0, 0, 200, 594))
         self.verticalLayout_3 = QVBoxLayout(self.page_4)
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
@@ -342,7 +342,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
         self.frame_14 = QFrame(self.frame_9)
         self.frame_14.setObjectName(u"frame_14")
-        self.frame_14.setMaximumSize(QSize(16777215, 200))
+        self.frame_14.setMinimumSize(QSize(0, 240))
+        self.frame_14.setMaximumSize(QSize(16777213, 240))
         self.frame_14.setStyleSheet(u"")
         self.frame_14.setFrameShape(QFrame.StyledPanel)
         self.frame_14.setFrameShadow(QFrame.Raised)
@@ -397,6 +398,7 @@ class Ui_MainWindow(object):
 
         self.frame_19 = QFrame(self.frame_14)
         self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setMaximumSize(QSize(16777215, 16777215))
         self.frame_19.setStyleSheet(u"")
         self.frame_19.setFrameShape(QFrame.StyledPanel)
         self.frame_19.setFrameShadow(QFrame.Raised)
@@ -526,7 +528,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
         self.frame_34 = QFrame(self.frame_17)
         self.frame_34.setObjectName(u"frame_34")
-        self.frame_34.setMaximumSize(QSize(16777215, 35))
+        self.frame_34.setMaximumSize(QSize(16777215, 40))
         self.frame_34.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
 "border-radius: 5px;")
         self.frame_34.setFrameShape(QFrame.StyledPanel)
@@ -610,7 +612,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.frame_36 = QFrame(self.frame_18)
         self.frame_36.setObjectName(u"frame_36")
-        self.frame_36.setMaximumSize(QSize(16777215, 35))
+        self.frame_36.setMaximumSize(QSize(16777215, 40))
         self.frame_36.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
 "border-radius: 5px;")
         self.frame_36.setFrameShape(QFrame.StyledPanel)
@@ -658,7 +660,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.frame_12 = QFrame(self.frame_10)
         self.frame_12.setObjectName(u"frame_12")
-        self.frame_12.setMaximumSize(QSize(16777215, 200))
+        self.frame_12.setMinimumSize(QSize(0, 240))
+        self.frame_12.setMaximumSize(QSize(16777215, 240))
         self.frame_12.setStyleSheet(u"")
         self.frame_12.setFrameShape(QFrame.StyledPanel)
         self.frame_12.setFrameShadow(QFrame.Raised)

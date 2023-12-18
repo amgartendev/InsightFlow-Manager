@@ -1,4 +1,5 @@
 from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtGui import QIcon
 from ui_dashboard import *
 import sys
 
@@ -9,21 +10,36 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.setWindowTitle("Modern Dashboard")
-        self.ui.pushButton_14.clicked.connect(self.test)
-        self.ui.pushButton_15.clicked.connect(self.test2)
-        self.ui.pushButton_14.setStyleSheet("border-bottom: 2px solid #E60540;")
 
-    def test(self):
-        new_style_button_14 = "border-bottom: 2px solid #E60540;"
-        new_style_button_15 = "border: none;"
-        self.ui.pushButton_14.setStyleSheet(new_style_button_14)
-        self.ui.pushButton_15.setStyleSheet(new_style_button_15)
+        # Hide / Show Sidebar
+        self.ui.sidebar.hide()
+        self.ui.button_sidebar.clicked.connect(self.hide_sidebar)
 
-    def test2(self):
-        new_style_button_14 = "border: none;"
-        new_style_button_15 = "border-bottom: 2px solid #E60540;"
-        self.ui.pushButton_14.setStyleSheet(new_style_button_14)
-        self.ui.pushButton_15.setStyleSheet(new_style_button_15)
+        # Change graph tab
+        self.ui.button_electricity_consumption.setStyleSheet("border-bottom: 2px solid #E60540;")
+        self.ui.button_electricity_consumption.clicked.connect(self.style_tab_electricity_consumption)
+        self.ui.button_devices.clicked.connect(self.style_tab_devices)
+
+    def hide_sidebar(self):
+        sidebar_container = self.ui.sidebar
+        if sidebar_container.isVisible():
+            sidebar_container.hide()
+            self.ui.button_sidebar.setIcon(QIcon("icons/align-justify.svg"))
+        else:
+            sidebar_container.show()
+            self.ui.button_sidebar.setIcon(QIcon("icons/chevron-left.svg"))
+
+    def style_tab_electricity_consumption(self):
+        style_button_electricity_consumption = "border-bottom: 2px solid #E60540;"
+        style_button_devices = "border: none;"
+        self.ui.button_electricity_consumption.setStyleSheet(style_button_electricity_consumption)
+        self.ui.button_devices.setStyleSheet(style_button_devices)
+
+    def style_tab_devices(self):
+        style_button_electricity_consumption = "border: none;"
+        style_button_devices = "border-bottom: 2px solid #E60540;"
+        self.ui.button_electricity_consumption.setStyleSheet(style_button_electricity_consumption)
+        self.ui.button_devices.setStyleSheet(style_button_devices)
 
 
 if __name__ == "__main__":

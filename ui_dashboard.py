@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardgDVTlL.ui'
+## Form generated from reading UI file 'dashboardxMfejL.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.1
 ##
@@ -19,12 +19,13 @@ from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QSizePolicy, QToolBox,
     QVBoxLayout, QWidget)
 import icons_rc
+import icons_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1357, 722)
+        MainWindow.resize(1353, 725)
         MainWindow.setStyleSheet(u"* {\n"
 "	color: rgb(255, 255, 255);\n"
 "	border: none;\n"
@@ -124,7 +125,7 @@ class Ui_MainWindow(object):
 "}")
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        self.page_3.setGeometry(QRect(0, 0, 200, 594))
+        self.page_3.setGeometry(QRect(0, 0, 200, 597))
         self.verticalLayout_4 = QVBoxLayout(self.page_3)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
@@ -172,7 +173,7 @@ class Ui_MainWindow(object):
         self.toolBox.addItem(self.page_3, icon4, u"Employees")
         self.page_4 = QWidget()
         self.page_4.setObjectName(u"page_4")
-        self.page_4.setGeometry(QRect(0, 0, 200, 594))
+        self.page_4.setGeometry(QRect(0, 0, 200, 597))
         self.verticalLayout_3 = QVBoxLayout(self.page_4)
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
@@ -238,86 +239,86 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setSpacing(6)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(6, 6, 6, 6)
-        self.frame = QFrame(self.header)
-        self.frame.setObjectName(u"frame")
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_5 = QHBoxLayout(self.frame)
+        self.sidebar_button_container = QFrame(self.header)
+        self.sidebar_button_container.setObjectName(u"sidebar_button_container")
+        self.sidebar_button_container.setFrameShape(QFrame.StyledPanel)
+        self.sidebar_button_container.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_5 = QHBoxLayout(self.sidebar_button_container)
         self.horizontalLayout_5.setSpacing(6)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(6, 6, 6, 6)
-        self.pushButton_6 = QPushButton(self.frame)
-        self.pushButton_6.setObjectName(u"pushButton_6")
+        self.button_sidebar = QPushButton(self.sidebar_button_container)
+        self.button_sidebar.setObjectName(u"button_sidebar")
         icon8 = QIcon()
         icon8.addFile(u":/icons/icons/align-justify.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_6.setIcon(icon8)
-        self.pushButton_6.setIconSize(QSize(32, 32))
+        self.button_sidebar.setIcon(icon8)
+        self.button_sidebar.setIconSize(QSize(32, 32))
 
-        self.horizontalLayout_5.addWidget(self.pushButton_6)
+        self.horizontalLayout_5.addWidget(self.button_sidebar)
 
 
-        self.horizontalLayout_4.addWidget(self.frame, 0, Qt.AlignLeft|Qt.AlignTop)
+        self.horizontalLayout_4.addWidget(self.sidebar_button_container, 0, Qt.AlignLeft|Qt.AlignTop)
 
-        self.frame_6 = QFrame(self.header)
-        self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_6 = QHBoxLayout(self.frame_6)
+        self.navbar_container = QFrame(self.header)
+        self.navbar_container.setObjectName(u"navbar_container")
+        self.navbar_container.setFrameShape(QFrame.StyledPanel)
+        self.navbar_container.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_6 = QHBoxLayout(self.navbar_container)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.frame_27 = QFrame(self.frame_6)
-        self.frame_27.setObjectName(u"frame_27")
-        self.frame_27.setFrameShape(QFrame.StyledPanel)
-        self.frame_27.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_12 = QHBoxLayout(self.frame_27)
+        self.navbar_tools = QFrame(self.navbar_container)
+        self.navbar_tools.setObjectName(u"navbar_tools")
+        self.navbar_tools.setFrameShape(QFrame.StyledPanel)
+        self.navbar_tools.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_12 = QHBoxLayout(self.navbar_tools)
         self.horizontalLayout_12.setSpacing(20)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.pushButton_10 = QPushButton(self.frame_27)
-        self.pushButton_10.setObjectName(u"pushButton_10")
-        self.pushButton_10.setStyleSheet(u"")
+        self.button_search = QPushButton(self.navbar_tools)
+        self.button_search.setObjectName(u"button_search")
+        self.button_search.setStyleSheet(u"")
         icon9 = QIcon()
         icon9.addFile(u":/icons/icons/search.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_10.setIcon(icon9)
+        self.button_search.setIcon(icon9)
 
-        self.horizontalLayout_12.addWidget(self.pushButton_10)
+        self.horizontalLayout_12.addWidget(self.button_search)
 
-        self.pushButton_11 = QPushButton(self.frame_27)
-        self.pushButton_11.setObjectName(u"pushButton_11")
+        self.button_messages = QPushButton(self.navbar_tools)
+        self.button_messages.setObjectName(u"button_messages")
         icon10 = QIcon()
         icon10.addFile(u":/icons/icons/mail.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_11.setIcon(icon10)
+        self.button_messages.setIcon(icon10)
 
-        self.horizontalLayout_12.addWidget(self.pushButton_11)
+        self.horizontalLayout_12.addWidget(self.button_messages)
 
-        self.pushButton_9 = QPushButton(self.frame_27)
-        self.pushButton_9.setObjectName(u"pushButton_9")
+        self.button_notifications = QPushButton(self.navbar_tools)
+        self.button_notifications.setObjectName(u"button_notifications")
         icon11 = QIcon()
         icon11.addFile(u":/icons/icons/bell.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_9.setIcon(icon11)
+        self.button_notifications.setIcon(icon11)
 
-        self.horizontalLayout_12.addWidget(self.pushButton_9)
+        self.horizontalLayout_12.addWidget(self.button_notifications)
 
 
-        self.horizontalLayout_6.addWidget(self.frame_27)
+        self.horizontalLayout_6.addWidget(self.navbar_tools)
 
-        self.pushButton_7 = QPushButton(self.frame_6)
-        self.pushButton_7.setObjectName(u"pushButton_7")
+        self.button_user = QPushButton(self.navbar_container)
+        self.button_user.setObjectName(u"button_user")
         icon12 = QIcon()
         icon12.addFile(u":/icons/icons/user.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_7.setIcon(icon12)
-        self.pushButton_7.setIconSize(QSize(25, 25))
+        self.button_user.setIcon(icon12)
+        self.button_user.setIconSize(QSize(25, 25))
 
-        self.horizontalLayout_6.addWidget(self.pushButton_7)
+        self.horizontalLayout_6.addWidget(self.button_user)
 
-        self.label_3 = QLabel(self.frame_6)
-        self.label_3.setObjectName(u"label_3")
+        self.label_username = QLabel(self.navbar_container)
+        self.label_username.setObjectName(u"label_username")
         font2 = QFont()
         font2.setBold(True)
-        self.label_3.setFont(font2)
+        self.label_username.setFont(font2)
 
-        self.horizontalLayout_6.addWidget(self.label_3)
+        self.horizontalLayout_6.addWidget(self.label_username)
 
 
-        self.horizontalLayout_4.addWidget(self.frame_6, 0, Qt.AlignRight|Qt.AlignTop)
+        self.horizontalLayout_4.addWidget(self.navbar_container, 0, Qt.AlignRight|Qt.AlignTop)
 
 
         self.verticalLayout_7.addWidget(self.header, 0, Qt.AlignTop)
@@ -384,14 +385,20 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_17.addWidget(self.frame_31, 0, Qt.AlignLeft)
 
-        self.pushButton_13 = QPushButton(self.frame_20)
-        self.pushButton_13.setObjectName(u"pushButton_13")
-        self.pushButton_13.setMinimumSize(QSize(100, 35))
-        self.pushButton_13.setFont(font2)
-        self.pushButton_13.setStyleSheet(u"background-color: #E60540;\n"
-"border-radius: 5px;")
+        self.button_support = QPushButton(self.frame_20)
+        self.button_support.setObjectName(u"button_support")
+        self.button_support.setMinimumSize(QSize(100, 35))
+        self.button_support.setFont(font2)
+        self.button_support.setStyleSheet(u"QPushButton {\n"
+"	background-color: #E60540;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: #C50332;\n"
+"}")
 
-        self.horizontalLayout_17.addWidget(self.pushButton_13, 0, Qt.AlignRight)
+        self.horizontalLayout_17.addWidget(self.button_support, 0, Qt.AlignRight)
 
 
         self.verticalLayout_12.addWidget(self.frame_20)
@@ -702,17 +709,21 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_14.addWidget(self.frame_28, 0, Qt.AlignLeft)
 
-        self.pushButton_12 = QPushButton(self.frame_23)
-        self.pushButton_12.setObjectName(u"pushButton_12")
-        self.pushButton_12.setMinimumSize(QSize(100, 35))
-        font5 = QFont()
-        font5.setPointSize(9)
-        font5.setBold(True)
-        self.pushButton_12.setFont(font5)
-        self.pushButton_12.setStyleSheet(u"background-color: #E60540;\n"
-"border-radius: 5px;")
+        self.button_documentation = QPushButton(self.frame_23)
+        self.button_documentation.setObjectName(u"button_documentation")
+        self.button_documentation.setMinimumSize(QSize(120, 35))
+        self.button_documentation.setFont(font2)
+        self.button_documentation.setMouseTracking(True)
+        self.button_documentation.setStyleSheet(u"QPushButton {\n"
+"	background-color: #E60540;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: #C50332;\n"
+"}")
 
-        self.horizontalLayout_14.addWidget(self.pushButton_12, 0, Qt.AlignRight)
+        self.horizontalLayout_14.addWidget(self.button_documentation, 0, Qt.AlignRight)
 
 
         self.verticalLayout_13.addWidget(self.frame_23)
@@ -816,29 +827,29 @@ class Ui_MainWindow(object):
         self.verticalLayout_25 = QVBoxLayout(self.frame_11)
         self.verticalLayout_25.setObjectName(u"verticalLayout_25")
         self.verticalLayout_25.setContentsMargins(0, -1, 0, -1)
-        self.frame_41 = QFrame(self.frame_11)
-        self.frame_41.setObjectName(u"frame_41")
-        self.frame_41.setStyleSheet(u"")
-        self.frame_41.setFrameShape(QFrame.StyledPanel)
-        self.frame_41.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_22 = QHBoxLayout(self.frame_41)
+        self.tab_container = QFrame(self.frame_11)
+        self.tab_container.setObjectName(u"tab_container")
+        self.tab_container.setStyleSheet(u"")
+        self.tab_container.setFrameShape(QFrame.StyledPanel)
+        self.tab_container.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_22 = QHBoxLayout(self.tab_container)
         self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
         self.horizontalLayout_22.setContentsMargins(2, -1, 2, -1)
-        self.pushButton_14 = QPushButton(self.frame_41)
-        self.pushButton_14.setObjectName(u"pushButton_14")
-        self.pushButton_14.setFont(font2)
-        self.pushButton_14.setStyleSheet(u"")
+        self.button_electricity_consumption = QPushButton(self.tab_container)
+        self.button_electricity_consumption.setObjectName(u"button_electricity_consumption")
+        self.button_electricity_consumption.setFont(font2)
+        self.button_electricity_consumption.setStyleSheet(u"")
 
-        self.horizontalLayout_22.addWidget(self.pushButton_14)
+        self.horizontalLayout_22.addWidget(self.button_electricity_consumption)
 
-        self.pushButton_15 = QPushButton(self.frame_41)
-        self.pushButton_15.setObjectName(u"pushButton_15")
-        self.pushButton_15.setFont(font2)
+        self.button_devices = QPushButton(self.tab_container)
+        self.button_devices.setObjectName(u"button_devices")
+        self.button_devices.setFont(font2)
 
-        self.horizontalLayout_22.addWidget(self.pushButton_15)
+        self.horizontalLayout_22.addWidget(self.button_devices)
 
 
-        self.verticalLayout_25.addWidget(self.frame_41, 0, Qt.AlignTop)
+        self.verticalLayout_25.addWidget(self.tab_container, 0, Qt.AlignTop)
 
         self.frame_40 = QFrame(self.frame_11)
         self.frame_40.setObjectName(u"frame_40")
@@ -847,12 +858,16 @@ class Ui_MainWindow(object):
         self.frame_40.setStyleSheet(u"")
         self.frame_40.setFrameShape(QFrame.StyledPanel)
         self.frame_40.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_26 = QVBoxLayout(self.frame_40)
+        self.verticalLayout_26.setObjectName(u"verticalLayout_26")
         self.label_10 = QLabel(self.frame_40)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setGeometry(QRect(160, 90, 81, 16))
         self.label_10.setFont(font2)
 
-        self.verticalLayout_25.addWidget(self.frame_40)
+        self.verticalLayout_26.addWidget(self.label_10)
+
+
+        self.verticalLayout_25.addWidget(self.frame_40, 0, Qt.AlignHCenter|Qt.AlignTop)
 
 
         self.verticalLayout_9.addWidget(self.frame_11)
@@ -872,25 +887,25 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setSpacing(0)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.frame_7 = QFrame(self.footer)
-        self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_8 = QHBoxLayout(self.frame_7)
+        self.size_grip_container = QFrame(self.footer)
+        self.size_grip_container.setObjectName(u"size_grip_container")
+        self.size_grip_container.setFrameShape(QFrame.StyledPanel)
+        self.size_grip_container.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_8 = QHBoxLayout(self.size_grip_container)
         self.horizontalLayout_8.setSpacing(0)
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
         self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
-        self.frame_8 = QFrame(self.frame_7)
-        self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setMinimumSize(QSize(10, 10))
-        self.frame_8.setMaximumSize(QSize(10, 10))
-        self.frame_8.setFrameShape(QFrame.StyledPanel)
-        self.frame_8.setFrameShadow(QFrame.Raised)
+        self.size_grip = QFrame(self.size_grip_container)
+        self.size_grip.setObjectName(u"size_grip")
+        self.size_grip.setMinimumSize(QSize(10, 10))
+        self.size_grip.setMaximumSize(QSize(10, 10))
+        self.size_grip.setFrameShape(QFrame.StyledPanel)
+        self.size_grip.setFrameShadow(QFrame.Raised)
 
-        self.horizontalLayout_8.addWidget(self.frame_8, 0, Qt.AlignRight|Qt.AlignBottom)
+        self.horizontalLayout_8.addWidget(self.size_grip, 0, Qt.AlignRight|Qt.AlignBottom)
 
 
-        self.horizontalLayout_7.addWidget(self.frame_7)
+        self.horizontalLayout_7.addWidget(self.size_grip_container)
 
 
         self.verticalLayout_7.addWidget(self.footer, 0, Qt.AlignBottom)
@@ -920,15 +935,15 @@ class Ui_MainWindow(object):
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Total Sales", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Profit", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_4), QCoreApplication.translate("MainWindow", u"Sales Overview", None))
-        self.pushButton_6.setText("")
-        self.pushButton_10.setText("")
-        self.pushButton_11.setText("")
-        self.pushButton_9.setText("")
-        self.pushButton_7.setText("")
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"User 1", None))
+        self.button_sidebar.setText("")
+        self.button_search.setText("")
+        self.button_messages.setText("")
+        self.button_notifications.setText("")
+        self.button_user.setText("")
+        self.label_username.setText(QCoreApplication.translate("MainWindow", u"User 1", None))
         self.label_11.setText("")
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"Title of label card", None))
-        self.pushButton_13.setText(QCoreApplication.translate("MainWindow", u"Support", None))
+        self.button_support.setText(QCoreApplication.translate("MainWindow", u"Support", None))
         self.label_13.setText("")
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Title of label card", None))
         self.label_15.setText("")
@@ -940,13 +955,13 @@ class Ui_MainWindow(object):
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"Traffic Consumption", None))
         self.label_5.setText("")
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Title of label card 2", None))
-        self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"Documentation", None))
+        self.button_documentation.setText(QCoreApplication.translate("MainWindow", u"Documentation", None))
         self.label_7.setText("")
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Title of label card 3", None))
         self.label_8.setText("")
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Title of label card 4", None))
-        self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"ELECTRICITY CONSUMPTION", None))
-        self.pushButton_15.setText(QCoreApplication.translate("MainWindow", u"DEVICES", None))
+        self.button_electricity_consumption.setText(QCoreApplication.translate("MainWindow", u"ELECTRICITY CONSUMPTION", None))
+        self.button_devices.setText(QCoreApplication.translate("MainWindow", u"DEVICES", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"GRAPH HERE", None))
     # retranslateUi
 

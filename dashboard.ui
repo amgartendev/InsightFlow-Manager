@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1353</width>
-    <height>725</height>
+    <width>1302</width>
+    <height>717</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -80,7 +80,7 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item>
+       <item alignment="Qt::AlignTop">
         <widget class="QFrame" name="slide_menu">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -104,8 +104,8 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item>
-           <widget class="QFrame" name="frame_2">
+          <item alignment="Qt::AlignTop">
+           <widget class="QFrame" name="logo_frame">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -117,10 +117,10 @@
               <number>6</number>
              </property>
              <property name="leftMargin">
-              <number>6</number>
+              <number>9</number>
              </property>
              <property name="topMargin">
-              <number>6</number>
+              <number>9</number>
              </property>
              <property name="rightMargin">
               <number>6</number>
@@ -129,7 +129,7 @@
               <number>6</number>
              </property>
              <item>
-              <widget class="QLabel" name="label">
+              <widget class="QLabel" name="label_app_name">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -142,7 +142,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_2">
+              <widget class="QLabel" name="icon_app">
                <property name="text">
                 <string/>
                </property>
@@ -155,49 +155,77 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_3">
+           <widget class="QFrame" name="sidebar_content_frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	text-align: left;
+	margin-left: 4px;
+	padding: 9px;
+}
+
+QPushButton:hover {
+	background-color: rgb(19, 15, 23);
+}</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_8">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
              <property name="spacing">
-              <number>0</number>
+              <number>30</number>
              </property>
              <property name="leftMargin">
               <number>0</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>50</number>
              </property>
              <property name="rightMargin">
               <number>0</number>
              </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item alignment="Qt::AlignLeft">
-              <widget class="QPushButton" name="pushButton_8">
+             <item>
+              <widget class="QPushButton" name="button_dashboard">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
+                 <bold>true</bold>
                 </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
                </property>
                <property name="layoutDirection">
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="styleSheet">
-                <string notr="true">margin-left: 4px;
-
-</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>Dashboard</string>
@@ -206,235 +234,192 @@
                 <iconset resource="icons.qrc">
                  <normaloff>:/icons/icons/airplay.svg</normaloff>:/icons/icons/airplay.svg</iconset>
                </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
               </widget>
              </item>
              <item>
-              <widget class="QToolBox" name="toolBox">
+              <widget class="QPushButton" name="button_employees">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
+                 <bold>true</bold>
                 </font>
                </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="styleSheet">
-                <string notr="true">QToolBox {
-	text-align: left;
-}
-
-QToolBox::tab {
-	border-radius: 5px;
-	text-align: left;
-}</string>
+                <string notr="true"/>
                </property>
-               <property name="currentIndex">
-                <number>0</number>
+               <property name="text">
+                <string>Employees</string>
                </property>
-               <widget class="QWidget" name="page_3">
-                <property name="geometry">
-                 <rect>
-                  <x>0</x>
-                  <y>0</y>
-                  <width>200</width>
-                  <height>597</height>
-                 </rect>
-                </property>
-                <attribute name="icon">
-                 <iconset resource="icons.qrc">
-                  <normaloff>:/icons/icons/users.svg</normaloff>:/icons/icons/users.svg</iconset>
-                </attribute>
-                <attribute name="label">
-                 <string>Employees</string>
-                </attribute>
-                <layout class="QVBoxLayout" name="verticalLayout_4">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                 <property name="leftMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>0</number>
-                 </property>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QFrame" name="frame_4">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_5">
-                    <property name="spacing">
-                     <number>25</number>
-                    </property>
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item alignment="Qt::AlignHCenter">
-                     <widget class="QPushButton" name="pushButton">
-                      <property name="text">
-                       <string>Management</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/briefcase.svg</normaloff>:/icons/icons/briefcase.svg</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>25</width>
-                        <height>25</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                    <item alignment="Qt::AlignHCenter">
-                     <widget class="QPushButton" name="pushButton_2">
-                      <property name="text">
-                       <string>Sales</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/dollar-sign.svg</normaloff>:/icons/icons/dollar-sign.svg</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>25</width>
-                        <height>25</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                    <item alignment="Qt::AlignHCenter">
-                     <widget class="QPushButton" name="pushButton_3">
-                      <property name="text">
-                       <string>Permissions</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/key.svg</normaloff>:/icons/icons/key.svg</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>25</width>
-                        <height>25</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-               <widget class="QWidget" name="page_4">
-                <property name="geometry">
-                 <rect>
-                  <x>0</x>
-                  <y>0</y>
-                  <width>200</width>
-                  <height>597</height>
-                 </rect>
-                </property>
-                <attribute name="icon">
-                 <iconset resource="icons.qrc">
-                  <normaloff>:/icons/icons/eye.svg</normaloff>:/icons/icons/eye.svg</iconset>
-                </attribute>
-                <attribute name="label">
-                 <string>Sales Overview</string>
-                </attribute>
-                <layout class="QVBoxLayout" name="verticalLayout_3">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                 <property name="leftMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>0</number>
-                 </property>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QFrame" name="frame_5">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_6">
-                    <property name="spacing">
-                     <number>25</number>
-                    </property>
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item alignment="Qt::AlignHCenter">
-                     <widget class="QPushButton" name="pushButton_4">
-                      <property name="text">
-                       <string>Total Sales</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/bar-chart-2.svg</normaloff>:/icons/icons/bar-chart-2.svg</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>25</width>
-                        <height>25</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                    <item alignment="Qt::AlignHCenter">
-                     <widget class="QPushButton" name="pushButton_5">
-                      <property name="text">
-                       <string>Profit</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/trending-up.svg</normaloff>:/icons/icons/trending-up.svg</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>25</width>
-                        <height>25</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/users.svg</normaloff>:/icons/icons/users.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_orders">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Orders</string>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/credit-card.svg</normaloff>:/icons/icons/credit-card.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_sales">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Sales</string>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/dollar-sign.svg</normaloff>:/icons/icons/dollar-sign.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_profit">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Profit</string>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/trending-up.svg</normaloff>:/icons/icons/trending-up.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_permissions">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Permissions</string>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/key.svg</normaloff>:/icons/icons/key.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_management">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Management</string>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/briefcase.svg</normaloff>:/icons/icons/briefcase.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
               </widget>
              </item>
             </layout>
@@ -523,6 +508,9 @@ QToolBox::tab {
              </property>
              <item>
               <widget class="QPushButton" name="button_sidebar">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -564,6 +552,9 @@ QToolBox::tab {
                 </property>
                 <item>
                  <widget class="QPushButton" name="button_search">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
@@ -578,6 +569,9 @@ QToolBox::tab {
                 </item>
                 <item>
                  <widget class="QPushButton" name="button_messages">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
@@ -589,6 +583,9 @@ QToolBox::tab {
                 </item>
                 <item>
                  <widget class="QPushButton" name="button_notifications">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
@@ -603,6 +600,9 @@ QToolBox::tab {
              </item>
              <item>
               <widget class="QPushButton" name="button_user">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -652,7 +652,7 @@ QToolBox::tab {
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
-           <widget class="QFrame" name="frame_9">
+           <widget class="QFrame" name="information_group_1">
             <property name="styleSheet">
              <string notr="true">/*background-color: white;*/</string>
             </property>
@@ -664,7 +664,7 @@ QToolBox::tab {
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_10">
              <item>
-              <widget class="QFrame" name="frame_14">
+              <widget class="QFrame" name="information_cards_frame_1">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -688,7 +688,7 @@ QToolBox::tab {
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_12">
                 <item>
-                 <widget class="QFrame" name="frame_20">
+                 <widget class="QFrame" name="primary_card_frame_1">
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
@@ -707,7 +707,7 @@ border-radius: 5px;</string>
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_17">
                    <item alignment="Qt::AlignLeft">
-                    <widget class="QFrame" name="frame_31">
+                    <widget class="QFrame" name="primary_card_left_content_1">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -719,7 +719,7 @@ border-radius: 5px;</string>
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_18">
                       <item>
-                       <widget class="QLabel" name="label_11">
+                       <widget class="QLabel" name="icon_primary_card_1">
                         <property name="minimumSize">
                          <size>
                           <width>60</width>
@@ -742,7 +742,7 @@ border-radius: 5px;</string>
                        </widget>
                       </item>
                       <item>
-                       <widget class="QLabel" name="label_12">
+                       <widget class="QLabel" name="label_primary_card_1">
                         <property name="font">
                          <font>
                           <bold>true</bold>
@@ -769,6 +769,9 @@ border-radius: 5px;</string>
                        <bold>true</bold>
                       </font>
                      </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">QPushButton {
 	background-color: #E60540;
@@ -788,7 +791,7 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="frame_19">
+                 <widget class="QFrame" name="secondary_card_frame_1">
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
@@ -806,7 +809,7 @@ QPushButton:hover {
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_10">
                    <item>
-                    <widget class="QFrame" name="frame_21">
+                    <widget class="QFrame" name="secondary_card_left_frame_1">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -820,6 +823,9 @@ QPushButton:hover {
                       <property name="leftMargin">
                        <number>0</number>
                       </property>
+                      <property name="topMargin">
+                       <number>9</number>
+                      </property>
                       <property name="rightMargin">
                        <number>0</number>
                       </property>
@@ -827,7 +833,7 @@ QPushButton:hover {
                        <number>0</number>
                       </property>
                       <item>
-                       <widget class="QFrame" name="frame_32">
+                       <widget class="QFrame" name="secondary_card_left_content_1">
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -840,7 +846,7 @@ border-radius: 5px;</string>
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_19">
                          <item alignment="Qt::AlignVCenter">
-                          <widget class="QLabel" name="label_13">
+                          <widget class="QLabel" name="icon_secondary_card_left_1">
                            <property name="minimumSize">
                             <size>
                              <width>40</width>
@@ -871,7 +877,7 @@ border-radius: 5px;</string>
                           </widget>
                          </item>
                          <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_14">
+                          <widget class="QLabel" name="label_secondary_card_left_1">
                            <property name="font">
                             <font>
                              <bold>true</bold>
@@ -889,7 +895,7 @@ border-radius: 5px;</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_22">
+                    <widget class="QFrame" name="secondary_card_right_frame_1">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -910,7 +916,7 @@ border-radius: 5px;</string>
                        <number>0</number>
                       </property>
                       <item>
-                       <widget class="QFrame" name="frame_33">
+                       <widget class="QFrame" name="secondary_card_right_content_1">
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -923,7 +929,7 @@ border-radius: 5px;</string>
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_20">
                          <item alignment="Qt::AlignVCenter">
-                          <widget class="QLabel" name="label_15">
+                          <widget class="QLabel" name="icon_secondary_card_right_1">
                            <property name="minimumSize">
                             <size>
                              <width>40</width>
@@ -951,7 +957,7 @@ border-radius: 5px;</string>
                           </widget>
                          </item>
                          <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_16">
+                          <widget class="QLabel" name="label_secondary_card_right_1">
                            <property name="font">
                             <font>
                              <bold>true</bold>
@@ -975,7 +981,7 @@ border-radius: 5px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QFrame" name="frame_13">
+              <widget class="QFrame" name="data_frame_1">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -1005,7 +1011,7 @@ border-radius: 5px;</string>
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QFrame" name="frame_16">
+                 <widget class="QFrame" name="main_graph_frame_1">
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -1027,7 +1033,7 @@ border-radius: 5px;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="frame_15">
+                 <widget class="QFrame" name="data_frame_right_content">
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
@@ -1039,7 +1045,7 @@ border-radius: 5px;</string>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_11">
                    <item>
-                    <widget class="QFrame" name="frame_17">
+                    <widget class="QFrame" name="solar_energy_consumption_content">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -1054,7 +1060,7 @@ border-radius: 5px;</string>
                        <number>2</number>
                       </property>
                       <item>
-                       <widget class="QFrame" name="frame_34">
+                       <widget class="QFrame" name="solar_energy_consumption_title_frame">
                         <property name="maximumSize">
                          <size>
                           <width>16777215</width>
@@ -1073,7 +1079,7 @@ border-radius: 5px;</string>
                         </property>
                         <layout class="QVBoxLayout" name="verticalLayout_20">
                          <item>
-                          <widget class="QLabel" name="label_18">
+                          <widget class="QLabel" name="label_solar_energy_consumption">
                            <property name="font">
                             <font>
                              <bold>true</bold>
@@ -1088,7 +1094,7 @@ border-radius: 5px;</string>
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_35">
+                       <widget class="QFrame" name="solar_energy_graph_content">
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -1101,7 +1107,7 @@ border-radius: 5px;</string>
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_21">
                          <item>
-                          <widget class="QFrame" name="frame_38">
+                          <widget class="QFrame" name="solar_energy_consumption_graph_frame">
                            <property name="styleSheet">
                             <string notr="true">background-color: rgb(24, 24, 36);</string>
                            </property>
@@ -1113,7 +1119,7 @@ border-radius: 5px;</string>
                            </property>
                            <layout class="QVBoxLayout" name="verticalLayout_22">
                             <item alignment="Qt::AlignHCenter">
-                             <widget class="QLabel" name="label_19">
+                             <widget class="QLabel" name="label_solar_energy_consumption_graph">
                               <property name="font">
                                <font>
                                 <bold>true</bold>
@@ -1128,7 +1134,7 @@ border-radius: 5px;</string>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QFrame" name="frame_39">
+                          <widget class="QFrame" name="solar_energy_consumed_frame">
                            <property name="styleSheet">
                             <string notr="true"/>
                            </property>
@@ -1140,7 +1146,7 @@ border-radius: 5px;</string>
                            </property>
                            <layout class="QVBoxLayout" name="verticalLayout_23">
                             <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
-                             <widget class="QLabel" name="label_20">
+                             <widget class="QLabel" name="label_current_solar_energy_consumption">
                               <property name="font">
                                <font>
                                 <pointsize>14</pointsize>
@@ -1153,7 +1159,7 @@ border-radius: 5px;</string>
                              </widget>
                             </item>
                             <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-                             <widget class="QLabel" name="label_21">
+                             <widget class="QLabel" name="label_solar_energy_consumption_limit">
                               <property name="font">
                                <font>
                                 <pointsize>9</pointsize>
@@ -1175,7 +1181,7 @@ border-radius: 5px;</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_18">
+                    <widget class="QFrame" name="traffic_consumption_content">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -1190,7 +1196,7 @@ border-radius: 5px;</string>
                        <number>2</number>
                       </property>
                       <item>
-                       <widget class="QFrame" name="frame_36">
+                       <widget class="QFrame" name="traffic_consumption_title_frame">
                         <property name="maximumSize">
                          <size>
                           <width>16777215</width>
@@ -1209,7 +1215,7 @@ border-radius: 5px;</string>
                         </property>
                         <layout class="QVBoxLayout" name="verticalLayout_21">
                          <item>
-                          <widget class="QLabel" name="label_17">
+                          <widget class="QLabel" name="label_traffic_consumption">
                            <property name="font">
                             <font>
                              <bold>true</bold>
@@ -1224,7 +1230,7 @@ border-radius: 5px;</string>
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_37">
+                       <widget class="QFrame" name="traffic_graph_content">
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -1250,7 +1256,7 @@ border-radius: 5px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_10">
+           <widget class="QFrame" name="information_group_2">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1274,7 +1280,7 @@ border-radius: 5px;</string>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_9">
              <item>
-              <widget class="QFrame" name="frame_12">
+              <widget class="QFrame" name="information_cards_frame_2">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -1298,7 +1304,7 @@ border-radius: 5px;</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_13">
                 <item>
-                 <widget class="QFrame" name="frame_23">
+                 <widget class="QFrame" name="primary_card_frame_2">
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
@@ -1317,7 +1323,7 @@ border-radius: 5px;</string>
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_14">
                    <item alignment="Qt::AlignLeft">
-                    <widget class="QFrame" name="frame_28">
+                    <widget class="QFrame" name="primary_card_left_content_2">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -1329,7 +1335,7 @@ border-radius: 5px;</string>
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_13">
                       <item>
-                       <widget class="QLabel" name="label_5">
+                       <widget class="QLabel" name="icon_primary_card_2">
                         <property name="minimumSize">
                          <size>
                           <width>60</width>
@@ -1352,7 +1358,7 @@ border-radius: 5px;</string>
                        </widget>
                       </item>
                       <item>
-                       <widget class="QLabel" name="label_4">
+                       <widget class="QLabel" name="label_primary_card_2">
                         <property name="font">
                          <font>
                           <bold>true</bold>
@@ -1379,6 +1385,9 @@ border-radius: 5px;</string>
                        <bold>true</bold>
                       </font>
                      </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
                      <property name="mouseTracking">
                       <bool>true</bool>
                      </property>
@@ -1401,7 +1410,7 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="frame_24">
+                 <widget class="QFrame" name="secondary_card_frame_2">
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
@@ -1413,7 +1422,7 @@ QPushButton:hover {
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_11">
                    <item>
-                    <widget class="QFrame" name="frame_25">
+                    <widget class="QFrame" name="secondary_card_left_frame_2">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -1434,7 +1443,7 @@ QPushButton:hover {
                        <number>0</number>
                       </property>
                       <item>
-                       <widget class="QFrame" name="frame_29">
+                       <widget class="QFrame" name="secondary_card_left_content_2">
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -1450,7 +1459,7 @@ border-radius: 5px;</string>
                           <number>9</number>
                          </property>
                          <item alignment="Qt::AlignVCenter">
-                          <widget class="QLabel" name="label_7">
+                          <widget class="QLabel" name="icon_secondary_card_left_2">
                            <property name="minimumSize">
                             <size>
                              <width>40</width>
@@ -1473,7 +1482,7 @@ border-radius: 5px;</string>
                           </widget>
                          </item>
                          <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_6">
+                          <widget class="QLabel" name="label_secondary_card_left_2">
                            <property name="font">
                             <font>
                              <bold>true</bold>
@@ -1491,7 +1500,7 @@ border-radius: 5px;</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_26">
+                    <widget class="QFrame" name="secondary_card_right_frame_2">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -1512,7 +1521,7 @@ border-radius: 5px;</string>
                        <number>0</number>
                       </property>
                       <item>
-                       <widget class="QFrame" name="frame_30">
+                       <widget class="QFrame" name="secondary_card_right_content_2">
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -1525,7 +1534,7 @@ border-radius: 5px;</string>
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_16">
                          <item>
-                          <widget class="QLabel" name="label_8">
+                          <widget class="QLabel" name="icon_secondary_card_right_2">
                            <property name="minimumSize">
                             <size>
                              <width>40</width>
@@ -1548,7 +1557,7 @@ border-radius: 5px;</string>
                           </widget>
                          </item>
                          <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_9">
+                          <widget class="QLabel" name="label_secondary_card_right_2">
                            <property name="font">
                             <font>
                              <bold>true</bold>
@@ -1572,7 +1581,7 @@ border-radius: 5px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QFrame" name="frame_11">
+              <widget class="QFrame" name="data_frame_2">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -1639,7 +1648,7 @@ border-radius: 5px;</string>
                  </widget>
                 </item>
                 <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-                 <widget class="QFrame" name="frame_40">
+                 <widget class="QFrame" name="label_alternative_graph_frame">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                     <horstretch>0</horstretch>
@@ -1657,7 +1666,7 @@ border-radius: 5px;</string>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_26">
                    <item>
-                    <widget class="QLabel" name="label_10">
+                    <widget class="QLabel" name="label_alternative_graph">
                      <property name="font">
                       <font>
                        <bold>true</bold>
@@ -1767,7 +1776,7 @@ border-radius: 5px;</string>
  </widget>
  <resources>
   <include location="icons.qrc"/>
-  <include location="../../.designer/backup/icons.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>

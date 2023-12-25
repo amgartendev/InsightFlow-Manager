@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardXrLJFZ.ui'
+## Form generated from reading UI file 'dashboardaTbhtW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1302, 717)
+        MainWindow.resize(1185, 679)
         MainWindow.setStyleSheet(u"* {\n"
 "	color: rgb(255, 255, 255);\n"
 "	border: none;\n"
@@ -505,6 +505,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.setContentsMargins(-1, 0, -1, 0)
         self.main_graph_frame_1 = QFrame(self.data_frame_1)
         self.main_graph_frame_1.setObjectName(u"main_graph_frame_1")
+        sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.main_graph_frame_1.sizePolicy().hasHeightForWidth())
+        self.main_graph_frame_1.setSizePolicy(sizePolicy4)
+        self.main_graph_frame_1.setMinimumSize(QSize(300, 0))
         self.main_graph_frame_1.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
 "border-radius: 5px;")
         self.main_graph_frame_1.setFrameShape(QFrame.StyledPanel)
@@ -512,6 +518,188 @@ class Ui_MainWindow(object):
         self.verticalLayout_24 = QVBoxLayout(self.main_graph_frame_1)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
         self.verticalLayout_24.setContentsMargins(-1, 9, -1, 9)
+        self.tab_container_1 = QFrame(self.main_graph_frame_1)
+        self.tab_container_1.setObjectName(u"tab_container_1")
+        self.tab_container_1.setFrameShape(QFrame.StyledPanel)
+        self.tab_container_1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_23 = QHBoxLayout(self.tab_container_1)
+        self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
+        self.horizontalLayout_23.setContentsMargins(2, -1, 2, -1)
+        self.button_temperature = QPushButton(self.tab_container_1)
+        self.button_temperature.setObjectName(u"button_temperature")
+        self.button_temperature.setFont(font1)
+        self.button_temperature.setCursor(QCursor(Qt.PointingHandCursor))
+
+        self.horizontalLayout_23.addWidget(self.button_temperature)
+
+        self.button_humidity = QPushButton(self.tab_container_1)
+        self.button_humidity.setObjectName(u"button_humidity")
+        self.button_humidity.setFont(font1)
+        self.button_humidity.setCursor(QCursor(Qt.PointingHandCursor))
+
+        self.horizontalLayout_23.addWidget(self.button_humidity)
+
+
+        self.verticalLayout_24.addWidget(self.tab_container_1, 0, Qt.AlignTop)
+
+        self.alternative_graph_frame_1 = QFrame(self.main_graph_frame_1)
+        self.alternative_graph_frame_1.setObjectName(u"alternative_graph_frame_1")
+        sizePolicy5 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.alternative_graph_frame_1.sizePolicy().hasHeightForWidth())
+        self.alternative_graph_frame_1.setSizePolicy(sizePolicy5)
+        self.alternative_graph_frame_1.setFrameShape(QFrame.StyledPanel)
+        self.alternative_graph_frame_1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_24 = QHBoxLayout(self.alternative_graph_frame_1)
+        self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
+        self.main_information = QFrame(self.alternative_graph_frame_1)
+        self.main_information.setObjectName(u"main_information")
+        font2 = QFont()
+        font2.setBold(False)
+        self.main_information.setFont(font2)
+        self.main_information.setFrameShape(QFrame.StyledPanel)
+        self.main_information.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_25 = QHBoxLayout(self.main_information)
+        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
+        self.label_temperature = QLabel(self.main_information)
+        self.label_temperature.setObjectName(u"label_temperature")
+        font3 = QFont()
+        font3.setPointSize(24)
+        font3.setBold(True)
+        self.label_temperature.setFont(font3)
+
+        self.horizontalLayout_25.addWidget(self.label_temperature, 0, Qt.AlignHCenter|Qt.AlignTop)
+
+
+        self.horizontalLayout_24.addWidget(self.main_information, 0, Qt.AlignVCenter)
+
+        self.additional_information = QFrame(self.alternative_graph_frame_1)
+        self.additional_information.setObjectName(u"additional_information")
+        self.additional_information.setFrameShape(QFrame.StyledPanel)
+        self.additional_information.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_6 = QVBoxLayout(self.additional_information)
+        self.verticalLayout_6.setSpacing(0)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.frame_wind = QFrame(self.additional_information)
+        self.frame_wind.setObjectName(u"frame_wind")
+        self.frame_wind.setFrameShape(QFrame.StyledPanel)
+        self.frame_wind.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_26 = QHBoxLayout(self.frame_wind)
+        self.horizontalLayout_26.setSpacing(0)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.horizontalLayout_26.setContentsMargins(0, 0, 0, 0)
+        self.frame_label_wind = QFrame(self.frame_wind)
+        self.frame_label_wind.setObjectName(u"frame_label_wind")
+        self.frame_label_wind.setMaximumSize(QSize(16777215, 16777215))
+        self.frame_label_wind.setFrameShape(QFrame.StyledPanel)
+        self.frame_label_wind.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_30 = QHBoxLayout(self.frame_label_wind)
+        self.horizontalLayout_30.setSpacing(0)
+        self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
+        self.horizontalLayout_30.setContentsMargins(0, 0, 0, 0)
+        self.icon_wind = QLabel(self.frame_label_wind)
+        self.icon_wind.setObjectName(u"icon_wind")
+        self.icon_wind.setPixmap(QPixmap(u":/icons/icons/wind.svg"))
+        self.icon_wind.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_30.addWidget(self.icon_wind)
+
+        self.label_wind = QLabel(self.frame_label_wind)
+        self.label_wind.setObjectName(u"label_wind")
+        self.label_wind.setFont(font1)
+        self.label_wind.setAlignment(Qt.AlignCenter)
+        self.label_wind.setWordWrap(True)
+
+        self.horizontalLayout_30.addWidget(self.label_wind)
+
+
+        self.horizontalLayout_26.addWidget(self.frame_label_wind)
+
+
+        self.verticalLayout_6.addWidget(self.frame_wind)
+
+        self.frame_rain = QFrame(self.additional_information)
+        self.frame_rain.setObjectName(u"frame_rain")
+        self.frame_rain.setFrameShape(QFrame.StyledPanel)
+        self.frame_rain.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_28 = QHBoxLayout(self.frame_rain)
+        self.horizontalLayout_28.setSpacing(0)
+        self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
+        self.horizontalLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.frame_labe_rain = QFrame(self.frame_rain)
+        self.frame_labe_rain.setObjectName(u"frame_labe_rain")
+        self.frame_labe_rain.setFrameShape(QFrame.StyledPanel)
+        self.frame_labe_rain.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_29 = QHBoxLayout(self.frame_labe_rain)
+        self.horizontalLayout_29.setSpacing(0)
+        self.horizontalLayout_29.setObjectName(u"horizontalLayout_29")
+        self.horizontalLayout_29.setContentsMargins(0, 0, 0, 0)
+        self.icon_rain = QLabel(self.frame_labe_rain)
+        self.icon_rain.setObjectName(u"icon_rain")
+        self.icon_rain.setPixmap(QPixmap(u":/icons/icons/cloud-rain.svg"))
+        self.icon_rain.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_29.addWidget(self.icon_rain)
+
+        self.label_rain = QLabel(self.frame_labe_rain)
+        self.label_rain.setObjectName(u"label_rain")
+        self.label_rain.setFont(font1)
+        self.label_rain.setAlignment(Qt.AlignCenter)
+        self.label_rain.setWordWrap(True)
+
+        self.horizontalLayout_29.addWidget(self.label_rain)
+
+
+        self.horizontalLayout_28.addWidget(self.frame_labe_rain)
+
+
+        self.verticalLayout_6.addWidget(self.frame_rain)
+
+        self.frame_weather = QFrame(self.additional_information)
+        self.frame_weather.setObjectName(u"frame_weather")
+        self.frame_weather.setFrameShape(QFrame.StyledPanel)
+        self.frame_weather.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_27 = QHBoxLayout(self.frame_weather)
+        self.horizontalLayout_27.setSpacing(0)
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
+        self.horizontalLayout_27.setContentsMargins(0, 0, 0, 0)
+        self.frame_label_weather = QFrame(self.frame_weather)
+        self.frame_label_weather.setObjectName(u"frame_label_weather")
+        self.frame_label_weather.setFrameShape(QFrame.StyledPanel)
+        self.frame_label_weather.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_31 = QHBoxLayout(self.frame_label_weather)
+        self.horizontalLayout_31.setSpacing(0)
+        self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
+        self.horizontalLayout_31.setContentsMargins(0, 0, 0, 0)
+        self.icon_weather = QLabel(self.frame_label_weather)
+        self.icon_weather.setObjectName(u"icon_weather")
+        self.icon_weather.setPixmap(QPixmap(u":/icons/icons/sun.svg"))
+        self.icon_weather.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_31.addWidget(self.icon_weather)
+
+        self.label_weather = QLabel(self.frame_label_weather)
+        self.label_weather.setObjectName(u"label_weather")
+        self.label_weather.setFont(font1)
+        self.label_weather.setAlignment(Qt.AlignCenter)
+        self.label_weather.setWordWrap(True)
+
+        self.horizontalLayout_31.addWidget(self.label_weather)
+
+
+        self.horizontalLayout_27.addWidget(self.frame_label_weather)
+
+
+        self.verticalLayout_6.addWidget(self.frame_weather)
+
+
+        self.horizontalLayout_24.addWidget(self.additional_information)
+
+
+        self.verticalLayout_24.addWidget(self.alternative_graph_frame_1)
+
 
         self.horizontalLayout_9.addWidget(self.main_graph_frame_1)
 
@@ -524,6 +712,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.solar_energy_consumption_content = QFrame(self.data_frame_right_content)
         self.solar_energy_consumption_content.setObjectName(u"solar_energy_consumption_content")
+        sizePolicy2.setHeightForWidth(self.solar_energy_consumption_content.sizePolicy().hasHeightForWidth())
+        self.solar_energy_consumption_content.setSizePolicy(sizePolicy2)
         self.solar_energy_consumption_content.setStyleSheet(u"")
         self.solar_energy_consumption_content.setFrameShape(QFrame.StyledPanel)
         self.solar_energy_consumption_content.setFrameShadow(QFrame.Raised)
@@ -558,16 +748,23 @@ class Ui_MainWindow(object):
         self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
         self.solar_energy_consumption_graph_frame = QFrame(self.solar_energy_graph_content)
         self.solar_energy_consumption_graph_frame.setObjectName(u"solar_energy_consumption_graph_frame")
-        self.solar_energy_consumption_graph_frame.setStyleSheet(u"background-color: rgb(24, 24, 36);")
+        self.solar_energy_consumption_graph_frame.setStyleSheet(u"")
         self.solar_energy_consumption_graph_frame.setFrameShape(QFrame.StyledPanel)
         self.solar_energy_consumption_graph_frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_22 = QVBoxLayout(self.solar_energy_consumption_graph_frame)
+        self.verticalLayout_22.setSpacing(0)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
-        self.label_solar_energy_consumption_graph = QLabel(self.solar_energy_consumption_graph_frame)
-        self.label_solar_energy_consumption_graph.setObjectName(u"label_solar_energy_consumption_graph")
-        self.label_solar_energy_consumption_graph.setFont(font1)
+        self.verticalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.label_total_consumed = QLabel(self.solar_energy_consumption_graph_frame)
+        self.label_total_consumed.setObjectName(u"label_total_consumed")
+        font4 = QFont()
+        font4.setPointSize(20)
+        font4.setBold(True)
+        self.label_total_consumed.setFont(font4)
+        self.label_total_consumed.setStyleSheet(u"color: #E60540;")
+        self.label_total_consumed.setAlignment(Qt.AlignCenter)
 
-        self.verticalLayout_22.addWidget(self.label_solar_energy_consumption_graph, 0, Qt.AlignHCenter)
+        self.verticalLayout_22.addWidget(self.label_total_consumed)
 
 
         self.horizontalLayout_21.addWidget(self.solar_energy_consumption_graph_frame)
@@ -581,19 +778,19 @@ class Ui_MainWindow(object):
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
         self.label_current_solar_energy_consumption = QLabel(self.solar_energy_consumed_frame)
         self.label_current_solar_energy_consumption.setObjectName(u"label_current_solar_energy_consumption")
-        font2 = QFont()
-        font2.setPointSize(14)
-        font2.setBold(True)
-        self.label_current_solar_energy_consumption.setFont(font2)
+        font5 = QFont()
+        font5.setPointSize(14)
+        font5.setBold(True)
+        self.label_current_solar_energy_consumption.setFont(font5)
 
         self.verticalLayout_23.addWidget(self.label_current_solar_energy_consumption, 0, Qt.AlignHCenter|Qt.AlignBottom)
 
         self.label_solar_energy_consumption_limit = QLabel(self.solar_energy_consumed_frame)
         self.label_solar_energy_consumption_limit.setObjectName(u"label_solar_energy_consumption_limit")
-        font3 = QFont()
-        font3.setPointSize(9)
-        font3.setBold(False)
-        self.label_solar_energy_consumption_limit.setFont(font3)
+        font6 = QFont()
+        font6.setPointSize(9)
+        font6.setBold(False)
+        self.label_solar_energy_consumption_limit.setFont(font6)
 
         self.verticalLayout_23.addWidget(self.label_solar_energy_consumption_limit, 0, Qt.AlignHCenter|Qt.AlignTop)
 
@@ -634,10 +831,16 @@ class Ui_MainWindow(object):
 
         self.traffic_graph_content = QFrame(self.traffic_consumption_content)
         self.traffic_graph_content.setObjectName(u"traffic_graph_content")
+        sizePolicy2.setHeightForWidth(self.traffic_graph_content.sizePolicy().hasHeightForWidth())
+        self.traffic_graph_content.setSizePolicy(sizePolicy2)
         self.traffic_graph_content.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
 "border-radius: 5px;")
         self.traffic_graph_content.setFrameShape(QFrame.StyledPanel)
         self.traffic_graph_content.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_5 = QVBoxLayout(self.traffic_graph_content)
+        self.verticalLayout_5.setSpacing(0)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.verticalLayout_5.setContentsMargins(6, 0, 6, 6)
 
         self.verticalLayout_19.addWidget(self.traffic_graph_content)
 
@@ -820,6 +1023,7 @@ class Ui_MainWindow(object):
 
         self.data_frame_2 = QFrame(self.information_group_2)
         self.data_frame_2.setObjectName(u"data_frame_2")
+        self.data_frame_2.setMaximumSize(QSize(16777215, 16777215))
         self.data_frame_2.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
 "border-radius: 5px;")
         self.data_frame_2.setFrameShape(QFrame.StyledPanel)
@@ -827,46 +1031,46 @@ class Ui_MainWindow(object):
         self.verticalLayout_25 = QVBoxLayout(self.data_frame_2)
         self.verticalLayout_25.setObjectName(u"verticalLayout_25")
         self.verticalLayout_25.setContentsMargins(0, -1, 0, 0)
-        self.tab_container = QFrame(self.data_frame_2)
-        self.tab_container.setObjectName(u"tab_container")
-        self.tab_container.setStyleSheet(u"")
-        self.tab_container.setFrameShape(QFrame.StyledPanel)
-        self.tab_container.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_22 = QHBoxLayout(self.tab_container)
+        self.tab_container_2 = QFrame(self.data_frame_2)
+        self.tab_container_2.setObjectName(u"tab_container_2")
+        self.tab_container_2.setCursor(QCursor(Qt.ArrowCursor))
+        self.tab_container_2.setStyleSheet(u"")
+        self.tab_container_2.setFrameShape(QFrame.StyledPanel)
+        self.tab_container_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_22 = QHBoxLayout(self.tab_container_2)
         self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
         self.horizontalLayout_22.setContentsMargins(2, 9, 2, 9)
-        self.button_electricity_consumption = QPushButton(self.tab_container)
+        self.button_electricity_consumption = QPushButton(self.tab_container_2)
         self.button_electricity_consumption.setObjectName(u"button_electricity_consumption")
         self.button_electricity_consumption.setFont(font1)
+        self.button_electricity_consumption.setCursor(QCursor(Qt.PointingHandCursor))
         self.button_electricity_consumption.setStyleSheet(u"")
 
         self.horizontalLayout_22.addWidget(self.button_electricity_consumption)
 
-        self.button_devices = QPushButton(self.tab_container)
+        self.button_devices = QPushButton(self.tab_container_2)
         self.button_devices.setObjectName(u"button_devices")
         self.button_devices.setFont(font1)
+        self.button_devices.setCursor(QCursor(Qt.PointingHandCursor))
 
         self.horizontalLayout_22.addWidget(self.button_devices)
 
 
-        self.verticalLayout_25.addWidget(self.tab_container, 0, Qt.AlignTop)
+        self.verticalLayout_25.addWidget(self.tab_container_2, 0, Qt.AlignTop)
 
-        self.alternative_graph_frame = QFrame(self.data_frame_2)
-        self.alternative_graph_frame.setObjectName(u"alternative_graph_frame")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.alternative_graph_frame.sizePolicy().hasHeightForWidth())
-        self.alternative_graph_frame.setSizePolicy(sizePolicy4)
-        self.alternative_graph_frame.setMaximumSize(QSize(16777215, 16777215))
-        self.alternative_graph_frame.setFrameShape(QFrame.StyledPanel)
-        self.alternative_graph_frame.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_4 = QVBoxLayout(self.alternative_graph_frame)
+        self.alternative_graph_frame_2 = QFrame(self.data_frame_2)
+        self.alternative_graph_frame_2.setObjectName(u"alternative_graph_frame_2")
+        sizePolicy5.setHeightForWidth(self.alternative_graph_frame_2.sizePolicy().hasHeightForWidth())
+        self.alternative_graph_frame_2.setSizePolicy(sizePolicy5)
+        self.alternative_graph_frame_2.setMaximumSize(QSize(16777215, 16777215))
+        self.alternative_graph_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.alternative_graph_frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_4 = QVBoxLayout(self.alternative_graph_frame_2)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.verticalLayout_4.setContentsMargins(6, 0, 6, 6)
 
-        self.verticalLayout_25.addWidget(self.alternative_graph_frame)
+        self.verticalLayout_25.addWidget(self.alternative_graph_frame_2)
 
 
         self.verticalLayout_9.addWidget(self.data_frame_2)
@@ -943,8 +1147,17 @@ class Ui_MainWindow(object):
         self.label_secondary_card_left_1.setText(QCoreApplication.translate("MainWindow", u"Title of label card", None))
         self.icon_secondary_card_right_1.setText("")
         self.label_secondary_card_right_1.setText(QCoreApplication.translate("MainWindow", u"Title of label card 2", None))
+        self.button_temperature.setText(QCoreApplication.translate("MainWindow", u"TEMPERATURE", None))
+        self.button_humidity.setText(QCoreApplication.translate("MainWindow", u"HUMIDITY", None))
+        self.label_temperature.setText(QCoreApplication.translate("MainWindow", u"75\u00ba F", None))
+        self.icon_wind.setText("")
+        self.label_wind.setText(QCoreApplication.translate("MainWindow", u"Wind: 3mph", None))
+        self.icon_rain.setText("")
+        self.label_rain.setText(QCoreApplication.translate("MainWindow", u"Rain: 0%", None))
+        self.icon_weather.setText("")
+        self.label_weather.setText(QCoreApplication.translate("MainWindow", u"Sunny", None))
         self.label_solar_energy_consumption.setText(QCoreApplication.translate("MainWindow", u"Solar Energy Consumption", None))
-        self.label_solar_energy_consumption_graph.setText(QCoreApplication.translate("MainWindow", u"GRAPH HERE", None))
+        self.label_total_consumed.setText(QCoreApplication.translate("MainWindow", u"76.34%", None))
         self.label_current_solar_energy_consumption.setText(QCoreApplication.translate("MainWindow", u"6.421 kWh", None))
         self.label_solar_energy_consumption_limit.setText(QCoreApplication.translate("MainWindow", u"out of 8.421 kWh", None))
         self.label_traffic_consumption.setText(QCoreApplication.translate("MainWindow", u"Traffic Consumption", None))

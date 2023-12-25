@@ -52,7 +52,7 @@ Please note that this might not be the final version of the project. Depending o
 small changes can happen.
 
 Hidden Sidebar:
-<img src="https://i.ibb.co/41Stqk6/image.png" />
+<img src="https://i.ibb.co/Ypj5ZM6/image.png" />
 
 Visible Sidebar:
-<img src="https://i.ibb.co/kBRcDLr/image.png" />
+<img src="https://i.ibb.co/Xs8hXWh/image.png" />

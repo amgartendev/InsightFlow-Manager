@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardImtffK.ui'
+## Form generated from reading UI file 'dashboardaTbhtW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1178, 679)
+        MainWindow.resize(1185, 679)
         MainWindow.setStyleSheet(u"* {\n"
 "	color: rgb(255, 255, 255);\n"
 "	border: none;\n"
@@ -528,12 +528,14 @@ class Ui_MainWindow(object):
         self.button_temperature = QPushButton(self.tab_container_1)
         self.button_temperature.setObjectName(u"button_temperature")
         self.button_temperature.setFont(font1)
+        self.button_temperature.setCursor(QCursor(Qt.PointingHandCursor))
 
         self.horizontalLayout_23.addWidget(self.button_temperature)
 
         self.button_humidity = QPushButton(self.tab_container_1)
         self.button_humidity.setObjectName(u"button_humidity")
         self.button_humidity.setFont(font1)
+        self.button_humidity.setCursor(QCursor(Qt.PointingHandCursor))
 
         self.horizontalLayout_23.addWidget(self.button_humidity)
 
@@ -608,6 +610,7 @@ class Ui_MainWindow(object):
         self.label_wind.setObjectName(u"label_wind")
         self.label_wind.setFont(font1)
         self.label_wind.setAlignment(Qt.AlignCenter)
+        self.label_wind.setWordWrap(True)
 
         self.horizontalLayout_30.addWidget(self.label_wind)
 
@@ -644,6 +647,7 @@ class Ui_MainWindow(object):
         self.label_rain.setObjectName(u"label_rain")
         self.label_rain.setFont(font1)
         self.label_rain.setAlignment(Qt.AlignCenter)
+        self.label_rain.setWordWrap(True)
 
         self.horizontalLayout_29.addWidget(self.label_rain)
 
@@ -680,6 +684,7 @@ class Ui_MainWindow(object):
         self.label_weather.setObjectName(u"label_weather")
         self.label_weather.setFont(font1)
         self.label_weather.setAlignment(Qt.AlignCenter)
+        self.label_weather.setWordWrap(True)
 
         self.horizontalLayout_31.addWidget(self.label_weather)
 
@@ -1018,6 +1023,7 @@ class Ui_MainWindow(object):
 
         self.data_frame_2 = QFrame(self.information_group_2)
         self.data_frame_2.setObjectName(u"data_frame_2")
+        self.data_frame_2.setMaximumSize(QSize(16777215, 16777215))
         self.data_frame_2.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
 "border-radius: 5px;")
         self.data_frame_2.setFrameShape(QFrame.StyledPanel)
@@ -1027,6 +1033,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_25.setContentsMargins(0, -1, 0, 0)
         self.tab_container_2 = QFrame(self.data_frame_2)
         self.tab_container_2.setObjectName(u"tab_container_2")
+        self.tab_container_2.setCursor(QCursor(Qt.ArrowCursor))
         self.tab_container_2.setStyleSheet(u"")
         self.tab_container_2.setFrameShape(QFrame.StyledPanel)
         self.tab_container_2.setFrameShadow(QFrame.Raised)
@@ -1036,6 +1043,7 @@ class Ui_MainWindow(object):
         self.button_electricity_consumption = QPushButton(self.tab_container_2)
         self.button_electricity_consumption.setObjectName(u"button_electricity_consumption")
         self.button_electricity_consumption.setFont(font1)
+        self.button_electricity_consumption.setCursor(QCursor(Qt.PointingHandCursor))
         self.button_electricity_consumption.setStyleSheet(u"")
 
         self.horizontalLayout_22.addWidget(self.button_electricity_consumption)
@@ -1043,6 +1051,7 @@ class Ui_MainWindow(object):
         self.button_devices = QPushButton(self.tab_container_2)
         self.button_devices.setObjectName(u"button_devices")
         self.button_devices.setFont(font1)
+        self.button_devices.setCursor(QCursor(Qt.PointingHandCursor))
 
         self.horizontalLayout_22.addWidget(self.button_devices)
 

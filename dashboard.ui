@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1178</width>
+    <width>1185</width>
     <height>679</height>
    </rect>
   </property>
@@ -1069,6 +1069,9 @@ border-radius: 5px;</string>
                           <bold>true</bold>
                          </font>
                         </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
                         <property name="text">
                          <string>TEMPERATURE</string>
                         </property>
@@ -1080,6 +1083,9 @@ border-radius: 5px;</string>
                          <font>
                           <bold>true</bold>
                          </font>
+                        </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
                         </property>
                         <property name="text">
                          <string>HUMIDITY</string>
@@ -1238,6 +1244,9 @@ border-radius: 5px;</string>
                                  <property name="alignment">
                                   <set>Qt::AlignCenter</set>
                                  </property>
+                                 <property name="wordWrap">
+                                  <bool>true</bool>
+                                 </property>
                                 </widget>
                                </item>
                               </layout>
@@ -1320,6 +1329,9 @@ border-radius: 5px;</string>
                                  <property name="alignment">
                                   <set>Qt::AlignCenter</set>
                                  </property>
+                                 <property name="wordWrap">
+                                  <bool>true</bool>
+                                 </property>
                                 </widget>
                                </item>
                               </layout>
@@ -1401,6 +1413,9 @@ border-radius: 5px;</string>
                                  </property>
                                  <property name="alignment">
                                   <set>Qt::AlignCenter</set>
+                                 </property>
+                                 <property name="wordWrap">
+                                  <bool>true</bool>
                                  </property>
                                 </widget>
                                </item>
@@ -2026,6 +2041,12 @@ border-radius: 5px;</string>
              </item>
              <item>
               <widget class="QFrame" name="data_frame_2">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(9, 5, 13);
 border-radius: 5px;</string>
@@ -2048,6 +2069,9 @@ border-radius: 5px;</string>
                 </property>
                 <item alignment="Qt::AlignTop">
                  <widget class="QFrame" name="tab_container_2">
+                  <property name="cursor">
+                   <cursorShape>ArrowCursor</cursorShape>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
@@ -2077,6 +2101,9 @@ border-radius: 5px;</string>
                        <bold>true</bold>
                       </font>
                      </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -2091,6 +2118,9 @@ border-radius: 5px;</string>
                       <font>
                        <bold>true</bold>
                       </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
                      </property>
                      <property name="text">
                       <string>DEVICES</string>

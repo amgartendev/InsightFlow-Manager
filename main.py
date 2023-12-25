@@ -45,9 +45,6 @@ class MainWindow(QMainWindow):
         style_button_temperature = "border-bottom: 2px solid #E60540;"
         style_button_humidity = "border: none"
 
-        # Clear layout to plot a new graph
-        for i in reversed(range(self.ui.horizontalLayout_24.count())):
-            self.ui.horizontalLayout_24.itemAt(i).widget().setParent(None)
         self.ui.button_temperature.setStyleSheet(style_button_temperature)
         self.ui.button_humidity.setStyleSheet(style_button_humidity)
 
@@ -60,7 +57,7 @@ class MainWindow(QMainWindow):
         label_rain = "Rain: 0%"
 
         icon_weather = QPixmap("icons/sun.svg")
-        label_weather = "Sunny"
+        label_weather = "Sunny"""
 
         self.ui.label_temperature.setText(temperature_label)
 
@@ -77,11 +74,30 @@ class MainWindow(QMainWindow):
         style_button_temperature = "border: none"
         style_button_humidity = "border-bottom: 2px solid #E60540;"
 
-        # Clear layout to plot a new graph
-        for i in reversed(range(self.ui.horizontalLayout_24.count())):
-            self.ui.horizontalLayout_24.itemAt(i).widget().setParent(None)
         self.ui.button_temperature.setStyleSheet(style_button_temperature)
         self.ui.button_humidity.setStyleSheet(style_button_humidity)
+
+        temperature_label = "95%"
+
+        icon_visibility = QPixmap("icons/eye.svg")
+        label_visibility = "Visibility: Excellent"
+
+        icon_sunrise = QPixmap("icons/sunrise.svg")
+        label_sunrise = "Sunrise: 6am"
+
+        icon_sunset = QPixmap("icons/sunset.svg")
+        label_sunset = "Sunset: 6pm"
+
+        self.ui.label_temperature.setText(temperature_label)
+
+        self.ui.icon_wind.setPixmap(icon_visibility)
+        self.ui.label_wind.setText(label_visibility)
+
+        self.ui.icon_rain.setPixmap(icon_sunrise)
+        self.ui.label_rain.setText(label_sunrise)
+
+        self.ui.icon_weather.setPixmap(icon_sunset)
+        self.ui.label_weather.setText(label_sunset)
 
     def style_tab_electricity_consumption(self):
         style_button_electricity_consumption = "border-bottom: 2px solid #E60540;"

@@ -44,22 +44,42 @@ class MainWindow(QMainWindow):
     def style_tab_temperature(self):
         style_button_temperature = "border-bottom: 2px solid #E60540;"
         style_button_humidity = "border: none"
-        electricity_consumption_graph = Graphs.energy_consumption()
 
         # Clear layout to plot a new graph
-        for i in reversed(range(self.ui.verticalLayout_6.count())):
-            self.ui.verticalLayout_6.itemAt(i).widget().setParent(None)
+        for i in reversed(range(self.ui.horizontalLayout_24.count())):
+            self.ui.horizontalLayout_24.itemAt(i).widget().setParent(None)
         self.ui.button_temperature.setStyleSheet(style_button_temperature)
         self.ui.button_humidity.setStyleSheet(style_button_humidity)
+
+        temperature_label = "75º F"
+
+        icon_wind = QPixmap("icons/wind.svg")
+        label_wind = "Wind: 3mph"
+
+        icon_rain = QPixmap("icons/cloud-rain.svg")
+        label_rain = "Rain: 0%"
+
+        icon_weather = QPixmap("icons/sun.svg")
+        label_weather = "Sunny"
+
+        self.ui.label_temperature.setText(temperature_label)
+
+        self.ui.icon_wind.setPixmap(icon_wind)
+        self.ui.label_wind.setText(label_wind)
+
+        self.ui.icon_rain.setPixmap(icon_rain)
+        self.ui.label_rain.setText(label_rain)
+
+        self.ui.icon_weather.setPixmap(icon_weather)
+        self.ui.label_weather.setText(label_weather)
 
     def style_tab_humidity(self):
         style_button_temperature = "border: none"
         style_button_humidity = "border-bottom: 2px solid #E60540;"
-        electricity_consumption_graph = Graphs.energy_consumption()
 
         # Clear layout to plot a new graph
-        for i in reversed(range(self.ui.verticalLayout_6.count())):
-            self.ui.verticalLayout_6.itemAt(i).widget().setParent(None)
+        for i in reversed(range(self.ui.horizontalLayout_24.count())):
+            self.ui.horizontalLayout_24.itemAt(i).widget().setParent(None)
         self.ui.button_temperature.setStyleSheet(style_button_temperature)
         self.ui.button_humidity.setStyleSheet(style_button_humidity)
 

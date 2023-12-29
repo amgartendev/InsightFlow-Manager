@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardaTbhtW.ui'
+## Form generated from reading UI file 'dashboardObzezM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
-    QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
-    QWidget)
+    QMainWindow, QPushButton, QSizePolicy, QStackedWidget,
+    QVBoxLayout, QWidget)
 import icons_rc
 import icons_rc
 
@@ -314,7 +314,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_7.addWidget(self.header, 0, Qt.AlignTop)
 
-        self.main_body = QFrame(self.main_content)
+        self.main_body = QStackedWidget(self.main_content)
         self.main_body.setObjectName(u"main_body")
         sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
         sizePolicy2.setHorizontalStretch(0)
@@ -323,9 +323,11 @@ class Ui_MainWindow(object):
         self.main_body.setSizePolicy(sizePolicy2)
         self.main_body.setFrameShape(QFrame.StyledPanel)
         self.main_body.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.main_body)
+        self.page_dashboard = QWidget()
+        self.page_dashboard.setObjectName(u"page_dashboard")
+        self.horizontalLayout_3 = QHBoxLayout(self.page_dashboard)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.information_group_1 = QFrame(self.main_body)
+        self.information_group_1 = QFrame(self.page_dashboard)
         self.information_group_1.setObjectName(u"information_group_1")
         sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
         sizePolicy3.setHorizontalStretch(0)
@@ -856,7 +858,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.information_group_1)
 
-        self.information_group_2 = QFrame(self.main_body)
+        self.information_group_2 = QFrame(self.page_dashboard)
         self.information_group_2.setObjectName(u"information_group_2")
         sizePolicy3.setHeightForWidth(self.information_group_2.sizePolicy().hasHeightForWidth())
         self.information_group_2.setSizePolicy(sizePolicy3)
@@ -1078,6 +1080,76 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.information_group_2)
 
+        self.main_body.addWidget(self.page_dashboard)
+        self.page_sales = QWidget()
+        self.page_sales.setObjectName(u"page_sales")
+        self.horizontalLayout_35 = QHBoxLayout(self.page_sales)
+        self.horizontalLayout_35.setObjectName(u"horizontalLayout_35")
+        self.label_6 = QLabel(self.page_sales)
+        self.label_6.setObjectName(u"label_6")
+        font7 = QFont()
+        font7.setPointSize(32)
+        font7.setBold(True)
+        self.label_6.setFont(font7)
+
+        self.horizontalLayout_35.addWidget(self.label_6, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.main_body.addWidget(self.page_sales)
+        self.page_profit = QWidget()
+        self.page_profit.setObjectName(u"page_profit")
+        self.horizontalLayout_34 = QHBoxLayout(self.page_profit)
+        self.horizontalLayout_34.setObjectName(u"horizontalLayout_34")
+        self.label_4 = QLabel(self.page_profit)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font7)
+
+        self.horizontalLayout_34.addWidget(self.label_4, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.main_body.addWidget(self.page_profit)
+        self.page_permissions = QWidget()
+        self.page_permissions.setObjectName(u"page_permissions")
+        self.horizontalLayout_37 = QHBoxLayout(self.page_permissions)
+        self.horizontalLayout_37.setObjectName(u"horizontalLayout_37")
+        self.label_5 = QLabel(self.page_permissions)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font7)
+
+        self.horizontalLayout_37.addWidget(self.label_5, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.main_body.addWidget(self.page_permissions)
+        self.page_management = QWidget()
+        self.page_management.setObjectName(u"page_management")
+        self.horizontalLayout_33 = QHBoxLayout(self.page_management)
+        self.horizontalLayout_33.setObjectName(u"horizontalLayout_33")
+        self.label_3 = QLabel(self.page_management)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setFont(font7)
+
+        self.horizontalLayout_33.addWidget(self.label_3, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.main_body.addWidget(self.page_management)
+        self.page_orders = QWidget()
+        self.page_orders.setObjectName(u"page_orders")
+        self.horizontalLayout_36 = QHBoxLayout(self.page_orders)
+        self.horizontalLayout_36.setObjectName(u"horizontalLayout_36")
+        self.label_2 = QLabel(self.page_orders)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setFont(font7)
+
+        self.horizontalLayout_36.addWidget(self.label_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.main_body.addWidget(self.page_orders)
+        self.page_employees = QWidget()
+        self.page_employees.setObjectName(u"page_employees")
+        self.horizontalLayout_32 = QHBoxLayout(self.page_employees)
+        self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
+        self.label = QLabel(self.page_employees)
+        self.label.setObjectName(u"label")
+        self.label.setFont(font7)
+
+        self.horizontalLayout_32.addWidget(self.label, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.main_body.addWidget(self.page_employees)
 
         self.verticalLayout_7.addWidget(self.main_body)
 
@@ -1170,5 +1242,11 @@ class Ui_MainWindow(object):
         self.label_secondary_card_right_2.setText(QCoreApplication.translate("MainWindow", u"Title of label card 4", None))
         self.button_electricity_consumption.setText(QCoreApplication.translate("MainWindow", u"ELECTRICITY CONSUMPTION", None))
         self.button_devices.setText(QCoreApplication.translate("MainWindow", u"DEVICES", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"SALES", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"PROFIT", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"PERMISSIONS", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"MANAGEMENT", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"ORDERS", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"EMPLOYEES", None))
     # retranslateUi
 

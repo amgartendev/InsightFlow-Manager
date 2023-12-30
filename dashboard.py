@@ -9,7 +9,16 @@ class Dashboard(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.setWindowTitle("InsightFlow Manager")
+
+        # Connect sidebar pages
         self.pages = Pages(self.ui)
+        self.ui.button_dashboard.clicked.connect(self.pages.set_dashboard_layout)
+        self.ui.button_employees.clicked.connect(self.pages.set_employees_layout)
+        self.ui.button_orders.clicked.connect(self.pages.set_orders_layout)
+        self.ui.button_sales.clicked.connect(self.pages.set_sales_layout)
+        self.ui.button_profit.clicked.connect(self.pages.set_profit_layout)
+        self.ui.button_permissions.clicked.connect(self.pages.set_permissions_layout)
+        self.ui.button_management.clicked.connect(self.pages.set_management_layout)
 
         # Hide / Show Sidebar
         self.ui.sidebar.hide()
@@ -32,15 +41,6 @@ class Dashboard(QMainWindow):
         # Plot Energy Consumption Graph
         electricity_consumption_graph = Graphs.energy_consumption()
         self.ui.verticalLayout_4.addWidget(electricity_consumption_graph)
-
-        # Connect sidebar pages
-        self.ui.button_dashboard.clicked.connect(self.pages.set_dashboard_layout)
-        self.ui.button_employees.clicked.connect(self.pages.set_employees_layout)
-        self.ui.button_orders.clicked.connect(self.pages.set_orders_layout)
-        self.ui.button_sales.clicked.connect(self.pages.set_sales_layout)
-        self.ui.button_profit.clicked.connect(self.pages.set_profit_layout)
-        self.ui.button_permissions.clicked.connect(self.pages.set_permissions_layout)
-        self.ui.button_management.clicked.connect(self.pages.set_management_layout)
 
     def hide_sidebar(self):
         sidebar_container = self.ui.sidebar
@@ -132,24 +132,3 @@ class Dashboard(QMainWindow):
         self.ui.button_electricity_consumption.setStyleSheet(style_button_electricity_consumption)
         self.ui.button_devices.setStyleSheet(style_button_devices)
         self.ui.verticalLayout_4.addWidget(devices_graph)
-
-    def set_dashboard_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_dashboard)
-
-    def set_employees_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_employees)
-
-    def set_orders_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_orders)
-
-    def set_sales_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_sales)
-
-    def set_profit_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_profit)
-
-    def set_permissions_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_permissions)
-
-    def set_management_layout(self):
-        self.ui.main_body.setCurrentWidget(self.ui.page_management)

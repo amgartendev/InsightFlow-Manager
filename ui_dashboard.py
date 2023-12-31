@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardVtnEYA.ui'
+## Form generated from reading UI file 'dashboardjTPokL.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -1495,7 +1495,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.main_body.setCurrentIndex(6)
+        self.main_body.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)

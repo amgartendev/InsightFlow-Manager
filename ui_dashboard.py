@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardObzezM.ui'
+## Form generated from reading UI file 'dashboardVtnEYA.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
-    QMainWindow, QPushButton, QSizePolicy, QStackedWidget,
-    QVBoxLayout, QWidget)
+    QMainWindow, QPushButton, QScrollArea, QSizePolicy,
+    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
 import icons_rc
 import icons_rc
 
@@ -1142,12 +1142,315 @@ class Ui_MainWindow(object):
         self.page_employees = QWidget()
         self.page_employees.setObjectName(u"page_employees")
         self.horizontalLayout_32 = QHBoxLayout(self.page_employees)
+        self.horizontalLayout_32.setSpacing(0)
         self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
-        self.label = QLabel(self.page_employees)
-        self.label.setObjectName(u"label")
-        self.label.setFont(font7)
+        self.horizontalLayout_32.setContentsMargins(0, 0, 0, 0)
+        self.main_body_employees = QFrame(self.page_employees)
+        self.main_body_employees.setObjectName(u"main_body_employees")
+        self.main_body_employees.setFrameShape(QFrame.StyledPanel)
+        self.main_body_employees.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_8 = QVBoxLayout(self.main_body_employees)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.main_employee_content_frame = QFrame(self.main_body_employees)
+        self.main_employee_content_frame.setObjectName(u"main_employee_content_frame")
+        self.main_employee_content_frame.setMinimumSize(QSize(0, 0))
+        self.main_employee_content_frame.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	border-radius: 5px;\n"
+"	margin: 10px;\n"
+"}")
+        self.main_employee_content_frame.setFrameShape(QFrame.StyledPanel)
+        self.main_employee_content_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_26 = QVBoxLayout(self.main_employee_content_frame)
+        self.verticalLayout_26.setSpacing(0)
+        self.verticalLayout_26.setObjectName(u"verticalLayout_26")
+        self.verticalLayout_26.setContentsMargins(12, 12, 12, 12)
+        self.header_employee_list = QFrame(self.main_employee_content_frame)
+        self.header_employee_list.setObjectName(u"header_employee_list")
+        self.header_employee_list.setMinimumSize(QSize(0, 0))
+        self.header_employee_list.setFrameShape(QFrame.StyledPanel)
+        self.header_employee_list.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_45 = QHBoxLayout(self.header_employee_list)
+        self.horizontalLayout_45.setSpacing(0)
+        self.horizontalLayout_45.setObjectName(u"horizontalLayout_45")
+        self.horizontalLayout_45.setContentsMargins(0, 0, 0, 0)
+        self.label_list_title = QLabel(self.header_employee_list)
+        self.label_list_title.setObjectName(u"label_list_title")
+        font8 = QFont()
+        font8.setPointSize(16)
+        font8.setBold(True)
+        self.label_list_title.setFont(font8)
 
-        self.horizontalLayout_32.addWidget(self.label, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.horizontalLayout_45.addWidget(self.label_list_title, 0, Qt.AlignLeft)
+
+        self.button_add_employee = QPushButton(self.header_employee_list)
+        self.button_add_employee.setObjectName(u"button_add_employee")
+        self.button_add_employee.setMinimumSize(QSize(120, 35))
+        self.button_add_employee.setFont(font1)
+        self.button_add_employee.setCursor(QCursor(Qt.PointingHandCursor))
+        self.button_add_employee.setStyleSheet(u"QPushButton {\n"
+"	background-color: #E60540;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: #C50332;\n"
+"}")
+
+        self.horizontalLayout_45.addWidget(self.button_add_employee, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_26.addWidget(self.header_employee_list)
+
+        self.separator_employees = QFrame(self.main_employee_content_frame)
+        self.separator_employees.setObjectName(u"separator_employees")
+        self.separator_employees.setMaximumSize(QSize(16777215, 2))
+        self.separator_employees.setStyleSheet(u"background-color: #FFFFFF;")
+        self.separator_employees.setFrameShadow(QFrame.Sunken)
+        self.separator_employees.setFrameShape(QFrame.HLine)
+
+        self.verticalLayout_26.addWidget(self.separator_employees)
+
+        self.scrollArea_employees = QScrollArea(self.main_employee_content_frame)
+        self.scrollArea_employees.setObjectName(u"scrollArea_employees")
+        self.scrollArea_employees.setMinimumSize(QSize(600, 0))
+        self.scrollArea_employees.setMaximumSize(QSize(16777215, 16777215))
+        self.scrollArea_employees.setStyleSheet(u"QScrollArea {\n"
+"	margin: 0px;\n"
+"	padding: 0px;\n"
+"}\n"
+"")
+        self.scrollArea_employees.setWidgetResizable(True)
+        self.scrollAreaWidgets_employees = QWidget()
+        self.scrollAreaWidgets_employees.setObjectName(u"scrollAreaWidgets_employees")
+        self.scrollAreaWidgets_employees.setGeometry(QRect(0, 0, 600, 473))
+        self.scrollAreaWidgets_employees.setStyleSheet(u"QWidget {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	margin: 0px;\n"
+"	padding: 0px;\n"
+"}")
+        self.verticalLayout_27 = QVBoxLayout(self.scrollAreaWidgets_employees)
+        self.verticalLayout_27.setSpacing(0)
+        self.verticalLayout_27.setObjectName(u"verticalLayout_27")
+        self.verticalLayout_27.setContentsMargins(-1, -1, -1, 9)
+        self.employee_management_frame_1 = QFrame(self.scrollAreaWidgets_employees)
+        self.employee_management_frame_1.setObjectName(u"employee_management_frame_1")
+        self.employee_management_frame_1.setMaximumSize(QSize(16777215, 80))
+        self.employee_management_frame_1.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.employee_management_frame_1.setFrameShape(QFrame.StyledPanel)
+        self.employee_management_frame_1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_39 = QHBoxLayout(self.employee_management_frame_1)
+        self.horizontalLayout_39.setObjectName(u"horizontalLayout_39")
+        self.employee_information_frame_1 = QFrame(self.employee_management_frame_1)
+        self.employee_information_frame_1.setObjectName(u"employee_information_frame_1")
+        self.employee_information_frame_1.setFrameShape(QFrame.StyledPanel)
+        self.employee_information_frame_1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_43 = QHBoxLayout(self.employee_information_frame_1)
+        self.horizontalLayout_43.setSpacing(0)
+        self.horizontalLayout_43.setObjectName(u"horizontalLayout_43")
+        self.horizontalLayout_43.setContentsMargins(-1, -1, 0, 0)
+        self.icon_employee_picture_1 = QLabel(self.employee_information_frame_1)
+        self.icon_employee_picture_1.setObjectName(u"icon_employee_picture_1")
+        self.icon_employee_picture_1.setFont(font1)
+        self.icon_employee_picture_1.setPixmap(QPixmap(u":/icons/icons/user.svg"))
+        self.icon_employee_picture_1.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_43.addWidget(self.icon_employee_picture_1, 0, Qt.AlignLeft)
+
+        self.label_employee_name_1 = QLabel(self.employee_information_frame_1)
+        self.label_employee_name_1.setObjectName(u"label_employee_name_1")
+        self.label_employee_name_1.setFont(font1)
+        self.label_employee_name_1.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_43.addWidget(self.label_employee_name_1, 0, Qt.AlignLeft)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_43.addItem(self.horizontalSpacer)
+
+        self.label_employee_permission_1 = QLabel(self.employee_information_frame_1)
+        self.label_employee_permission_1.setObjectName(u"label_employee_permission_1")
+        self.label_employee_permission_1.setFont(font1)
+        self.label_employee_permission_1.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_43.addWidget(self.label_employee_permission_1, 0, Qt.AlignLeft)
+
+
+        self.horizontalLayout_39.addWidget(self.employee_information_frame_1, 0, Qt.AlignLeft)
+
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_39.addItem(self.horizontalSpacer_2)
+
+        self.button_manage_employee_1 = QPushButton(self.employee_management_frame_1)
+        self.button_manage_employee_1.setObjectName(u"button_manage_employee_1")
+        self.button_manage_employee_1.setMinimumSize(QSize(120, 35))
+        self.button_manage_employee_1.setFont(font1)
+        self.button_manage_employee_1.setCursor(QCursor(Qt.PointingHandCursor))
+        self.button_manage_employee_1.setStyleSheet(u"QPushButton {\n"
+"	background-color: #E60540;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: #C50332;\n"
+"}")
+
+        self.horizontalLayout_39.addWidget(self.button_manage_employee_1, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_27.addWidget(self.employee_management_frame_1)
+
+        self.employee_management_frame_2 = QFrame(self.scrollAreaWidgets_employees)
+        self.employee_management_frame_2.setObjectName(u"employee_management_frame_2")
+        self.employee_management_frame_2.setMaximumSize(QSize(16777215, 80))
+        self.employee_management_frame_2.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.employee_management_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.employee_management_frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_40 = QHBoxLayout(self.employee_management_frame_2)
+        self.horizontalLayout_40.setObjectName(u"horizontalLayout_40")
+        self.employee_information_frame_2 = QFrame(self.employee_management_frame_2)
+        self.employee_information_frame_2.setObjectName(u"employee_information_frame_2")
+        self.employee_information_frame_2.setFrameShape(QFrame.StyledPanel)
+        self.employee_information_frame_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_42 = QHBoxLayout(self.employee_information_frame_2)
+        self.horizontalLayout_42.setObjectName(u"horizontalLayout_42")
+        self.icon_employee_picture_2 = QLabel(self.employee_information_frame_2)
+        self.icon_employee_picture_2.setObjectName(u"icon_employee_picture_2")
+        self.icon_employee_picture_2.setFont(font1)
+        self.icon_employee_picture_2.setPixmap(QPixmap(u":/icons/icons/user.svg"))
+        self.icon_employee_picture_2.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_42.addWidget(self.icon_employee_picture_2, 0, Qt.AlignLeft)
+
+        self.label_employee_name_2 = QLabel(self.employee_information_frame_2)
+        self.label_employee_name_2.setObjectName(u"label_employee_name_2")
+        self.label_employee_name_2.setFont(font1)
+        self.label_employee_name_2.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_42.addWidget(self.label_employee_name_2, 0, Qt.AlignLeft)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_42.addItem(self.horizontalSpacer_3)
+
+        self.label_employee_permission_2 = QLabel(self.employee_information_frame_2)
+        self.label_employee_permission_2.setObjectName(u"label_employee_permission_2")
+        self.label_employee_permission_2.setFont(font1)
+        self.label_employee_permission_2.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_42.addWidget(self.label_employee_permission_2, 0, Qt.AlignLeft)
+
+
+        self.horizontalLayout_40.addWidget(self.employee_information_frame_2, 0, Qt.AlignLeft)
+
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_40.addItem(self.horizontalSpacer_4)
+
+        self.button_manage_employee_2 = QPushButton(self.employee_management_frame_2)
+        self.button_manage_employee_2.setObjectName(u"button_manage_employee_2")
+        self.button_manage_employee_2.setMinimumSize(QSize(120, 35))
+        self.button_manage_employee_2.setFont(font1)
+        self.button_manage_employee_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.button_manage_employee_2.setStyleSheet(u"QPushButton {\n"
+"	background-color: #E60540;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: #C50332;\n"
+"}")
+
+        self.horizontalLayout_40.addWidget(self.button_manage_employee_2, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_27.addWidget(self.employee_management_frame_2)
+
+        self.employee_management_frame_3 = QFrame(self.scrollAreaWidgets_employees)
+        self.employee_management_frame_3.setObjectName(u"employee_management_frame_3")
+        self.employee_management_frame_3.setMaximumSize(QSize(16777215, 80))
+        self.employee_management_frame_3.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.employee_management_frame_3.setFrameShape(QFrame.StyledPanel)
+        self.employee_management_frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_41 = QHBoxLayout(self.employee_management_frame_3)
+        self.horizontalLayout_41.setObjectName(u"horizontalLayout_41")
+        self.employee_information_frame_3 = QFrame(self.employee_management_frame_3)
+        self.employee_information_frame_3.setObjectName(u"employee_information_frame_3")
+        self.employee_information_frame_3.setFrameShape(QFrame.StyledPanel)
+        self.employee_information_frame_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_44 = QHBoxLayout(self.employee_information_frame_3)
+        self.horizontalLayout_44.setObjectName(u"horizontalLayout_44")
+        self.icon_employee_picture_3 = QLabel(self.employee_information_frame_3)
+        self.icon_employee_picture_3.setObjectName(u"icon_employee_picture_3")
+        self.icon_employee_picture_3.setFont(font1)
+        self.icon_employee_picture_3.setPixmap(QPixmap(u":/icons/icons/user.svg"))
+        self.icon_employee_picture_3.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_44.addWidget(self.icon_employee_picture_3, 0, Qt.AlignLeft)
+
+        self.label_employee_name_3 = QLabel(self.employee_information_frame_3)
+        self.label_employee_name_3.setObjectName(u"label_employee_name_3")
+        self.label_employee_name_3.setFont(font1)
+        self.label_employee_name_3.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_44.addWidget(self.label_employee_name_3, 0, Qt.AlignLeft)
+
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_44.addItem(self.horizontalSpacer_5)
+
+        self.label_employee_permission_3 = QLabel(self.employee_information_frame_3)
+        self.label_employee_permission_3.setObjectName(u"label_employee_permission_3")
+        self.label_employee_permission_3.setFont(font1)
+        self.label_employee_permission_3.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_44.addWidget(self.label_employee_permission_3, 0, Qt.AlignLeft)
+
+        self.horizontalSpacer_6 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_44.addItem(self.horizontalSpacer_6)
+
+
+        self.horizontalLayout_41.addWidget(self.employee_information_frame_3, 0, Qt.AlignLeft)
+
+        self.button_manage_employee_3 = QPushButton(self.employee_management_frame_3)
+        self.button_manage_employee_3.setObjectName(u"button_manage_employee_3")
+        self.button_manage_employee_3.setMinimumSize(QSize(120, 35))
+        self.button_manage_employee_3.setFont(font1)
+        self.button_manage_employee_3.setCursor(QCursor(Qt.PointingHandCursor))
+        self.button_manage_employee_3.setStyleSheet(u"QPushButton {\n"
+"	background-color: #E60540;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: #C50332;\n"
+"}")
+
+        self.horizontalLayout_41.addWidget(self.button_manage_employee_3, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_27.addWidget(self.employee_management_frame_3)
+
+        self.scrollArea_employees.setWidget(self.scrollAreaWidgets_employees)
+
+        self.verticalLayout_26.addWidget(self.scrollArea_employees)
+
+
+        self.verticalLayout_8.addWidget(self.main_employee_content_frame, 0, Qt.AlignHCenter)
+
+
+        self.horizontalLayout_32.addWidget(self.main_body_employees)
 
         self.main_body.addWidget(self.page_employees)
 
@@ -1191,6 +1494,9 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
+
+        self.main_body.setCurrentIndex(6)
+
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -1247,6 +1553,19 @@ class Ui_MainWindow(object):
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"PERMISSIONS", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"MANAGEMENT", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"ORDERS", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"EMPLOYEES", None))
+        self.label_list_title.setText(QCoreApplication.translate("MainWindow", u"Employees list", None))
+        self.button_add_employee.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.icon_employee_picture_1.setText("")
+        self.label_employee_name_1.setText(QCoreApplication.translate("MainWindow", u"Employee 1", None))
+        self.label_employee_permission_1.setText(QCoreApplication.translate("MainWindow", u"User", None))
+        self.button_manage_employee_1.setText(QCoreApplication.translate("MainWindow", u"Manage", None))
+        self.icon_employee_picture_2.setText("")
+        self.label_employee_name_2.setText(QCoreApplication.translate("MainWindow", u"Employee 2", None))
+        self.label_employee_permission_2.setText(QCoreApplication.translate("MainWindow", u"User", None))
+        self.button_manage_employee_2.setText(QCoreApplication.translate("MainWindow", u"Manage", None))
+        self.icon_employee_picture_3.setText("")
+        self.label_employee_name_3.setText(QCoreApplication.translate("MainWindow", u"Employee 3", None))
+        self.label_employee_permission_3.setText(QCoreApplication.translate("MainWindow", u"User", None))
+        self.button_manage_employee_3.setText(QCoreApplication.translate("MainWindow", u"Manage", None))
     # retranslateUi
 

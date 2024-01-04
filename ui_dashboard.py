@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardjTPokL.ui'
+## Form generated from reading UI file 'dashboardDwWwsh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -16,8 +16,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
-    QMainWindow, QPushButton, QScrollArea, QSizePolicy,
-    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
+    QLineEdit, QMainWindow, QPushButton, QScrollArea,
+    QSizePolicy, QSpacerItem, QStackedWidget, QVBoxLayout,
+    QWidget)
 import icons_rc
 import icons_rc
 
@@ -326,7 +327,9 @@ class Ui_MainWindow(object):
         self.page_dashboard = QWidget()
         self.page_dashboard.setObjectName(u"page_dashboard")
         self.horizontalLayout_3 = QHBoxLayout(self.page_dashboard)
+        self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.information_group_1 = QFrame(self.page_dashboard)
         self.information_group_1.setObjectName(u"information_group_1")
         sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
@@ -338,7 +341,9 @@ class Ui_MainWindow(object):
         self.information_group_1.setFrameShape(QFrame.StyledPanel)
         self.information_group_1.setFrameShadow(QFrame.Raised)
         self.verticalLayout_10 = QVBoxLayout(self.information_group_1)
+        self.verticalLayout_10.setSpacing(0)
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.verticalLayout_10.setContentsMargins(0, 0, 0, 0)
         self.information_cards_frame_1 = QFrame(self.information_group_1)
         self.information_cards_frame_1.setObjectName(u"information_cards_frame_1")
         self.information_cards_frame_1.setMinimumSize(QSize(0, 240))
@@ -868,7 +873,9 @@ class Ui_MainWindow(object):
         self.information_group_2.setFrameShape(QFrame.StyledPanel)
         self.information_group_2.setFrameShadow(QFrame.Raised)
         self.verticalLayout_9 = QVBoxLayout(self.information_group_2)
+        self.verticalLayout_9.setSpacing(0)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.information_cards_frame_2 = QFrame(self.information_group_2)
         self.information_cards_frame_2.setObjectName(u"information_cards_frame_2")
         self.information_cards_frame_2.setMinimumSize(QSize(0, 240))
@@ -1131,12 +1138,474 @@ class Ui_MainWindow(object):
         self.page_orders = QWidget()
         self.page_orders.setObjectName(u"page_orders")
         self.horizontalLayout_36 = QHBoxLayout(self.page_orders)
+        self.horizontalLayout_36.setSpacing(0)
         self.horizontalLayout_36.setObjectName(u"horizontalLayout_36")
-        self.label_2 = QLabel(self.page_orders)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setFont(font7)
+        self.horizontalLayout_36.setContentsMargins(0, 0, 0, 0)
+        self.main_body_orders = QFrame(self.page_orders)
+        self.main_body_orders.setObjectName(u"main_body_orders")
+        self.main_body_orders.setFrameShape(QFrame.StyledPanel)
+        self.main_body_orders.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_38 = QHBoxLayout(self.main_body_orders)
+        self.horizontalLayout_38.setSpacing(0)
+        self.horizontalLayout_38.setObjectName(u"horizontalLayout_38")
+        self.horizontalLayout_38.setContentsMargins(0, 0, 0, 0)
+        self.orders_information_group_1 = QFrame(self.main_body_orders)
+        self.orders_information_group_1.setObjectName(u"orders_information_group_1")
+        sizePolicy3.setHeightForWidth(self.orders_information_group_1.sizePolicy().hasHeightForWidth())
+        self.orders_information_group_1.setSizePolicy(sizePolicy3)
+        self.orders_information_group_1.setMaximumSize(QSize(16777215, 16777215))
+        self.orders_information_group_1.setStyleSheet(u"")
+        self.orders_information_group_1.setFrameShape(QFrame.StyledPanel)
+        self.orders_information_group_1.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_28 = QVBoxLayout(self.orders_information_group_1)
+        self.verticalLayout_28.setSpacing(0)
+        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
+        self.verticalLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.credit_card_frame = QFrame(self.orders_information_group_1)
+        self.credit_card_frame.setObjectName(u"credit_card_frame")
+        self.credit_card_frame.setStyleSheet(u"")
+        self.credit_card_frame.setFrameShape(QFrame.StyledPanel)
+        self.credit_card_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_29 = QVBoxLayout(self.credit_card_frame)
+        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
+        self.credit_card_container = QFrame(self.credit_card_frame)
+        self.credit_card_container.setObjectName(u"credit_card_container")
+        self.credit_card_container.setStyleSheet(u"")
+        self.credit_card_container.setFrameShape(QFrame.StyledPanel)
+        self.credit_card_container.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_30 = QVBoxLayout(self.credit_card_container)
+        self.verticalLayout_30.setObjectName(u"verticalLayout_30")
+        self.credit_card_label_container = QFrame(self.credit_card_container)
+        self.credit_card_label_container.setObjectName(u"credit_card_label_container")
+        self.credit_card_label_container.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
+"border-radius: 5px;")
+        self.credit_card_label_container.setFrameShape(QFrame.StyledPanel)
+        self.credit_card_label_container.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_46 = QHBoxLayout(self.credit_card_label_container)
+        self.horizontalLayout_46.setObjectName(u"horizontalLayout_46")
+        self.icon_credit_card = QLabel(self.credit_card_label_container)
+        self.icon_credit_card.setObjectName(u"icon_credit_card")
+        self.icon_credit_card.setMinimumSize(QSize(60, 50))
+        self.icon_credit_card.setFont(font1)
+        self.icon_credit_card.setStyleSheet(u"background-color: rgb(24, 24, 36);\n"
+"border-radius: 5px;")
+        self.icon_credit_card.setPixmap(QPixmap(u":/icons/icons/credit-card.svg"))
+        self.icon_credit_card.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_36.addWidget(self.label_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.horizontalLayout_46.addWidget(self.icon_credit_card, 0, Qt.AlignLeft)
+
+        self.label_credit_card = QLabel(self.credit_card_label_container)
+        self.label_credit_card.setObjectName(u"label_credit_card")
+        self.label_credit_card.setFont(font5)
+        self.label_credit_card.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_46.addWidget(self.label_credit_card, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.verticalLayout_30.addWidget(self.credit_card_label_container, 0, Qt.AlignHCenter)
+
+
+        self.verticalLayout_29.addWidget(self.credit_card_container)
+
+
+        self.verticalLayout_28.addWidget(self.credit_card_frame, 0, Qt.AlignTop)
+
+        self.credit_cards_orders_frame = QFrame(self.orders_information_group_1)
+        self.credit_cards_orders_frame.setObjectName(u"credit_cards_orders_frame")
+        sizePolicy4.setHeightForWidth(self.credit_cards_orders_frame.sizePolicy().hasHeightForWidth())
+        self.credit_cards_orders_frame.setSizePolicy(sizePolicy4)
+        self.credit_cards_orders_frame.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	border-radius: 5px;\n"
+"	margin: 10px;\n"
+"}")
+        self.credit_cards_orders_frame.setFrameShape(QFrame.StyledPanel)
+        self.credit_cards_orders_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_33 = QVBoxLayout(self.credit_cards_orders_frame)
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
+        self.label_total_credit_card_orders = QLabel(self.credit_cards_orders_frame)
+        self.label_total_credit_card_orders.setObjectName(u"label_total_credit_card_orders")
+        font8 = QFont()
+        font8.setPointSize(16)
+        font8.setBold(True)
+        self.label_total_credit_card_orders.setFont(font8)
+
+        self.verticalLayout_33.addWidget(self.label_total_credit_card_orders, 0, Qt.AlignLeft)
+
+        self.scrollArea_credit_card = QScrollArea(self.credit_cards_orders_frame)
+        self.scrollArea_credit_card.setObjectName(u"scrollArea_credit_card")
+        self.scrollArea_credit_card.setStyleSheet(u"background-color: #09050D;")
+        self.scrollArea_credit_card.setWidgetResizable(True)
+        self.scrollAreaWidget_credit_card = QWidget()
+        self.scrollAreaWidget_credit_card.setObjectName(u"scrollAreaWidget_credit_card")
+        self.scrollAreaWidget_credit_card.setGeometry(QRect(0, 0, 435, 389))
+        self.scrollAreaWidget_credit_card.setStyleSheet(u"QFrame {\n"
+"	margin: 0px;\n"
+"}")
+        self.verticalLayout_32 = QVBoxLayout(self.scrollAreaWidget_credit_card)
+        self.verticalLayout_32.setSpacing(6)
+        self.verticalLayout_32.setObjectName(u"verticalLayout_32")
+        self.verticalLayout_32.setContentsMargins(-1, 9, -1, -1)
+        self.template_order_1 = QFrame(self.scrollAreaWidget_credit_card)
+        self.template_order_1.setObjectName(u"template_order_1")
+        self.template_order_1.setStyleSheet(u"")
+        self.template_order_1.setFrameShape(QFrame.StyledPanel)
+        self.template_order_1.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_31 = QVBoxLayout(self.template_order_1)
+        self.verticalLayout_31.setSpacing(6)
+        self.verticalLayout_31.setObjectName(u"verticalLayout_31")
+        self.container_order_information_1 = QFrame(self.template_order_1)
+        self.container_order_information_1.setObjectName(u"container_order_information_1")
+        self.container_order_information_1.setStyleSheet(u"")
+        self.container_order_information_1.setFrameShape(QFrame.StyledPanel)
+        self.container_order_information_1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_48 = QHBoxLayout(self.container_order_information_1)
+        self.horizontalLayout_48.setSpacing(0)
+        self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
+        self.horizontalLayout_48.setContentsMargins(0, 0, 0, 0)
+        self.label_order_product_1 = QLabel(self.container_order_information_1)
+        self.label_order_product_1.setObjectName(u"label_order_product_1")
+        self.label_order_product_1.setFont(font)
+
+        self.horizontalLayout_48.addWidget(self.label_order_product_1, 0, Qt.AlignLeft)
+
+        self.label_order_price_1 = QLabel(self.container_order_information_1)
+        self.label_order_price_1.setObjectName(u"label_order_price_1")
+        self.label_order_price_1.setFont(font)
+        self.label_order_price_1.setStyleSheet(u"color: lime;")
+
+        self.horizontalLayout_48.addWidget(self.label_order_price_1, 0, Qt.AlignRight|Qt.AlignBottom)
+
+
+        self.verticalLayout_31.addWidget(self.container_order_information_1, 0, Qt.AlignBottom)
+
+        self.container_order_id_1 = QFrame(self.template_order_1)
+        self.container_order_id_1.setObjectName(u"container_order_id_1")
+        self.container_order_id_1.setStyleSheet(u"")
+        self.container_order_id_1.setFrameShape(QFrame.StyledPanel)
+        self.container_order_id_1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_47 = QHBoxLayout(self.container_order_id_1)
+        self.horizontalLayout_47.setSpacing(0)
+        self.horizontalLayout_47.setObjectName(u"horizontalLayout_47")
+        self.horizontalLayout_47.setContentsMargins(0, 0, 0, 0)
+        self.label_order_id_1 = QLabel(self.container_order_id_1)
+        self.label_order_id_1.setObjectName(u"label_order_id_1")
+        font9 = QFont()
+        font9.setPointSize(10)
+        font9.setBold(True)
+        self.label_order_id_1.setFont(font9)
+        self.label_order_id_1.setStyleSheet(u"color: #5B5B5B;")
+
+        self.horizontalLayout_47.addWidget(self.label_order_id_1, 0, Qt.AlignLeft|Qt.AlignTop)
+
+
+        self.verticalLayout_31.addWidget(self.container_order_id_1, 0, Qt.AlignTop)
+
+        self.divider1 = QLineEdit(self.template_order_1)
+        self.divider1.setObjectName(u"divider1")
+        self.divider1.setMaximumSize(QSize(16777215, 2))
+        self.divider1.setStyleSheet(u"background-color: #E60540;")
+
+        self.verticalLayout_31.addWidget(self.divider1)
+
+
+        self.verticalLayout_32.addWidget(self.template_order_1, 0, Qt.AlignTop)
+
+        self.template_order_2 = QFrame(self.scrollAreaWidget_credit_card)
+        self.template_order_2.setObjectName(u"template_order_2")
+        self.template_order_2.setFrameShape(QFrame.StyledPanel)
+        self.template_order_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_34 = QVBoxLayout(self.template_order_2)
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.container_order_information_2 = QFrame(self.template_order_2)
+        self.container_order_information_2.setObjectName(u"container_order_information_2")
+        self.container_order_information_2.setStyleSheet(u"")
+        self.container_order_information_2.setFrameShape(QFrame.StyledPanel)
+        self.container_order_information_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_49 = QHBoxLayout(self.container_order_information_2)
+        self.horizontalLayout_49.setSpacing(0)
+        self.horizontalLayout_49.setObjectName(u"horizontalLayout_49")
+        self.horizontalLayout_49.setContentsMargins(0, 0, 0, 0)
+        self.label_order_product_2 = QLabel(self.container_order_information_2)
+        self.label_order_product_2.setObjectName(u"label_order_product_2")
+        self.label_order_product_2.setFont(font)
+
+        self.horizontalLayout_49.addWidget(self.label_order_product_2, 0, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.label_order_price_2 = QLabel(self.container_order_information_2)
+        self.label_order_price_2.setObjectName(u"label_order_price_2")
+        self.label_order_price_2.setFont(font)
+        self.label_order_price_2.setStyleSheet(u"color: lime;")
+
+        self.horizontalLayout_49.addWidget(self.label_order_price_2, 0, Qt.AlignRight|Qt.AlignBottom)
+
+
+        self.verticalLayout_34.addWidget(self.container_order_information_2, 0, Qt.AlignTop)
+
+        self.container_order_id_2 = QFrame(self.template_order_2)
+        self.container_order_id_2.setObjectName(u"container_order_id_2")
+        self.container_order_id_2.setStyleSheet(u"")
+        self.container_order_id_2.setFrameShape(QFrame.StyledPanel)
+        self.container_order_id_2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_50 = QHBoxLayout(self.container_order_id_2)
+        self.horizontalLayout_50.setSpacing(0)
+        self.horizontalLayout_50.setObjectName(u"horizontalLayout_50")
+        self.horizontalLayout_50.setContentsMargins(0, 0, 0, 0)
+        self.label_order_id_2 = QLabel(self.container_order_id_2)
+        self.label_order_id_2.setObjectName(u"label_order_id_2")
+        self.label_order_id_2.setFont(font9)
+        self.label_order_id_2.setStyleSheet(u"color: #5B5B5B;")
+
+        self.horizontalLayout_50.addWidget(self.label_order_id_2, 0, Qt.AlignLeft|Qt.AlignTop)
+
+
+        self.verticalLayout_34.addWidget(self.container_order_id_2, 0, Qt.AlignTop)
+
+        self.divider2 = QLineEdit(self.template_order_2)
+        self.divider2.setObjectName(u"divider2")
+        self.divider2.setMaximumSize(QSize(16777215, 2))
+        self.divider2.setStyleSheet(u"background-color: #E60540;")
+
+        self.verticalLayout_34.addWidget(self.divider2)
+
+
+        self.verticalLayout_32.addWidget(self.template_order_2, 0, Qt.AlignTop)
+
+        self.scrollArea_credit_card.setWidget(self.scrollAreaWidget_credit_card)
+
+        self.verticalLayout_33.addWidget(self.scrollArea_credit_card)
+
+
+        self.verticalLayout_28.addWidget(self.credit_cards_orders_frame)
+
+
+        self.horizontalLayout_38.addWidget(self.orders_information_group_1)
+
+        self.orders_information_group_2 = QFrame(self.main_body_orders)
+        self.orders_information_group_2.setObjectName(u"orders_information_group_2")
+        sizePolicy3.setHeightForWidth(self.orders_information_group_2.sizePolicy().hasHeightForWidth())
+        self.orders_information_group_2.setSizePolicy(sizePolicy3)
+        self.orders_information_group_2.setStyleSheet(u"")
+        self.orders_information_group_2.setFrameShape(QFrame.StyledPanel)
+        self.orders_information_group_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_35 = QVBoxLayout(self.orders_information_group_2)
+        self.verticalLayout_35.setSpacing(0)
+        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
+        self.verticalLayout_35.setContentsMargins(0, 0, 0, 0)
+        self.money_frame = QFrame(self.orders_information_group_2)
+        self.money_frame.setObjectName(u"money_frame")
+        self.money_frame.setFrameShape(QFrame.StyledPanel)
+        self.money_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_36 = QVBoxLayout(self.money_frame)
+        self.verticalLayout_36.setSpacing(6)
+        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
+        self.verticalLayout_36.setContentsMargins(9, 9, 9, 9)
+        self.money_container = QFrame(self.money_frame)
+        self.money_container.setObjectName(u"money_container")
+        self.money_container.setStyleSheet(u"")
+        self.money_container.setFrameShape(QFrame.StyledPanel)
+        self.money_container.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_37 = QVBoxLayout(self.money_container)
+        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
+        self.money_label_container = QFrame(self.money_container)
+        self.money_label_container.setObjectName(u"money_label_container")
+        self.money_label_container.setStyleSheet(u"background-color: rgb(9, 5, 13);\n"
+"border-radius: 5px;")
+        self.money_label_container.setFrameShape(QFrame.StyledPanel)
+        self.money_label_container.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_51 = QHBoxLayout(self.money_label_container)
+        self.horizontalLayout_51.setObjectName(u"horizontalLayout_51")
+        self.icon_money = QLabel(self.money_label_container)
+        self.icon_money.setObjectName(u"icon_money")
+        self.icon_money.setMinimumSize(QSize(60, 50))
+        self.icon_money.setFont(font1)
+        self.icon_money.setStyleSheet(u"background-color: rgb(24, 24, 36);\n"
+"border-radius: 5px;")
+        self.icon_money.setPixmap(QPixmap(u":/icons/icons/dollar-sign.svg"))
+        self.icon_money.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_51.addWidget(self.icon_money)
+
+        self.label_money = QLabel(self.money_label_container)
+        self.label_money.setObjectName(u"label_money")
+        self.label_money.setFont(font5)
+        self.label_money.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_51.addWidget(self.label_money)
+
+
+        self.verticalLayout_37.addWidget(self.money_label_container, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.verticalLayout_36.addWidget(self.money_container)
+
+
+        self.verticalLayout_35.addWidget(self.money_frame, 0, Qt.AlignTop)
+
+        self.money_orders_frame = QFrame(self.orders_information_group_2)
+        self.money_orders_frame.setObjectName(u"money_orders_frame")
+        sizePolicy4.setHeightForWidth(self.money_orders_frame.sizePolicy().hasHeightForWidth())
+        self.money_orders_frame.setSizePolicy(sizePolicy4)
+        self.money_orders_frame.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(9, 5, 13);\n"
+"	border-radius: 5px;\n"
+"	margin: 10px;\n"
+"}")
+        self.money_orders_frame.setFrameShape(QFrame.StyledPanel)
+        self.money_orders_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_38 = QVBoxLayout(self.money_orders_frame)
+        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
+        self.label_total_money_orders = QLabel(self.money_orders_frame)
+        self.label_total_money_orders.setObjectName(u"label_total_money_orders")
+        self.label_total_money_orders.setFont(font8)
+
+        self.verticalLayout_38.addWidget(self.label_total_money_orders, 0, Qt.AlignLeft)
+
+        self.scrollArea_money = QScrollArea(self.money_orders_frame)
+        self.scrollArea_money.setObjectName(u"scrollArea_money")
+        self.scrollArea_money.setStyleSheet(u"background-color: #09050D;")
+        self.scrollArea_money.setWidgetResizable(True)
+        self.scrollAreaWidget_money = QWidget()
+        self.scrollAreaWidget_money.setObjectName(u"scrollAreaWidget_money")
+        self.scrollAreaWidget_money.setGeometry(QRect(0, 0, 434, 389))
+        self.scrollAreaWidget_money.setStyleSheet(u"QFrame {\n"
+"	margin: 0px;\n"
+"}")
+        self.verticalLayout_41 = QVBoxLayout(self.scrollAreaWidget_money)
+        self.verticalLayout_41.setObjectName(u"verticalLayout_41")
+        self.template_order_3 = QFrame(self.scrollAreaWidget_money)
+        self.template_order_3.setObjectName(u"template_order_3")
+        self.template_order_3.setFrameShape(QFrame.StyledPanel)
+        self.template_order_3.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_39 = QVBoxLayout(self.template_order_3)
+        self.verticalLayout_39.setObjectName(u"verticalLayout_39")
+        self.container_order_information_3 = QFrame(self.template_order_3)
+        self.container_order_information_3.setObjectName(u"container_order_information_3")
+        self.container_order_information_3.setStyleSheet(u"")
+        self.container_order_information_3.setFrameShape(QFrame.StyledPanel)
+        self.container_order_information_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_53 = QHBoxLayout(self.container_order_information_3)
+        self.horizontalLayout_53.setSpacing(0)
+        self.horizontalLayout_53.setObjectName(u"horizontalLayout_53")
+        self.horizontalLayout_53.setContentsMargins(0, 0, 0, 0)
+        self.label_order_product_3 = QLabel(self.container_order_information_3)
+        self.label_order_product_3.setObjectName(u"label_order_product_3")
+        self.label_order_product_3.setFont(font)
+
+        self.horizontalLayout_53.addWidget(self.label_order_product_3, 0, Qt.AlignLeft)
+
+        self.label_order_price_3 = QLabel(self.container_order_information_3)
+        self.label_order_price_3.setObjectName(u"label_order_price_3")
+        self.label_order_price_3.setFont(font)
+        self.label_order_price_3.setStyleSheet(u"color: lime;")
+
+        self.horizontalLayout_53.addWidget(self.label_order_price_3, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_39.addWidget(self.container_order_information_3, 0, Qt.AlignBottom)
+
+        self.container_order_id_3 = QFrame(self.template_order_3)
+        self.container_order_id_3.setObjectName(u"container_order_id_3")
+        self.container_order_id_3.setStyleSheet(u"")
+        self.container_order_id_3.setFrameShape(QFrame.StyledPanel)
+        self.container_order_id_3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_52 = QHBoxLayout(self.container_order_id_3)
+        self.horizontalLayout_52.setSpacing(0)
+        self.horizontalLayout_52.setObjectName(u"horizontalLayout_52")
+        self.horizontalLayout_52.setContentsMargins(0, 0, 0, 0)
+        self.label_order_id_3 = QLabel(self.container_order_id_3)
+        self.label_order_id_3.setObjectName(u"label_order_id_3")
+        self.label_order_id_3.setFont(font9)
+        self.label_order_id_3.setStyleSheet(u"color: #5B5B5B;")
+
+        self.horizontalLayout_52.addWidget(self.label_order_id_3, 0, Qt.AlignLeft|Qt.AlignTop)
+
+
+        self.verticalLayout_39.addWidget(self.container_order_id_3, 0, Qt.AlignTop)
+
+        self.divider3 = QLineEdit(self.template_order_3)
+        self.divider3.setObjectName(u"divider3")
+        self.divider3.setMaximumSize(QSize(16777215, 2))
+        self.divider3.setStyleSheet(u"background-color: #E60540;")
+
+        self.verticalLayout_39.addWidget(self.divider3)
+
+
+        self.verticalLayout_41.addWidget(self.template_order_3, 0, Qt.AlignTop)
+
+        self.template_order_4 = QFrame(self.scrollAreaWidget_money)
+        self.template_order_4.setObjectName(u"template_order_4")
+        self.template_order_4.setStyleSheet(u"")
+        self.template_order_4.setFrameShape(QFrame.StyledPanel)
+        self.template_order_4.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_40 = QVBoxLayout(self.template_order_4)
+        self.verticalLayout_40.setObjectName(u"verticalLayout_40")
+        self.container_order_information_4 = QFrame(self.template_order_4)
+        self.container_order_information_4.setObjectName(u"container_order_information_4")
+        self.container_order_information_4.setStyleSheet(u"")
+        self.container_order_information_4.setFrameShape(QFrame.StyledPanel)
+        self.container_order_information_4.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_54 = QHBoxLayout(self.container_order_information_4)
+        self.horizontalLayout_54.setSpacing(0)
+        self.horizontalLayout_54.setObjectName(u"horizontalLayout_54")
+        self.horizontalLayout_54.setContentsMargins(0, 0, 0, 0)
+        self.label_order_product_4 = QLabel(self.container_order_information_4)
+        self.label_order_product_4.setObjectName(u"label_order_product_4")
+        self.label_order_product_4.setFont(font)
+
+        self.horizontalLayout_54.addWidget(self.label_order_product_4, 0, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.label_order_price_4 = QLabel(self.container_order_information_4)
+        self.label_order_price_4.setObjectName(u"label_order_price_4")
+        self.label_order_price_4.setFont(font)
+        self.label_order_price_4.setStyleSheet(u"color: #E60540;")
+
+        self.horizontalLayout_54.addWidget(self.label_order_price_4, 0, Qt.AlignRight|Qt.AlignBottom)
+
+
+        self.verticalLayout_40.addWidget(self.container_order_information_4, 0, Qt.AlignTop)
+
+        self.container_order_id_4 = QFrame(self.template_order_4)
+        self.container_order_id_4.setObjectName(u"container_order_id_4")
+        self.container_order_id_4.setStyleSheet(u"")
+        self.container_order_id_4.setFrameShape(QFrame.StyledPanel)
+        self.container_order_id_4.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_55 = QHBoxLayout(self.container_order_id_4)
+        self.horizontalLayout_55.setSpacing(0)
+        self.horizontalLayout_55.setObjectName(u"horizontalLayout_55")
+        self.horizontalLayout_55.setContentsMargins(0, 0, 0, 0)
+        self.label_order_id_4 = QLabel(self.container_order_id_4)
+        self.label_order_id_4.setObjectName(u"label_order_id_4")
+        self.label_order_id_4.setFont(font9)
+        self.label_order_id_4.setStyleSheet(u"color: #5B5B5B;")
+
+        self.horizontalLayout_55.addWidget(self.label_order_id_4, 0, Qt.AlignLeft|Qt.AlignTop)
+
+
+        self.verticalLayout_40.addWidget(self.container_order_id_4, 0, Qt.AlignTop)
+
+        self.divider4 = QLineEdit(self.template_order_4)
+        self.divider4.setObjectName(u"divider4")
+        self.divider4.setMaximumSize(QSize(16777215, 2))
+        self.divider4.setStyleSheet(u"background-color: #E60540;")
+
+        self.verticalLayout_40.addWidget(self.divider4)
+
+
+        self.verticalLayout_41.addWidget(self.template_order_4, 0, Qt.AlignTop)
+
+        self.scrollArea_money.setWidget(self.scrollAreaWidget_money)
+
+        self.verticalLayout_38.addWidget(self.scrollArea_money)
+
+
+        self.verticalLayout_35.addWidget(self.money_orders_frame)
+
+
+        self.horizontalLayout_38.addWidget(self.orders_information_group_2)
+
+
+        self.horizontalLayout_36.addWidget(self.main_body_orders)
 
         self.main_body.addWidget(self.page_orders)
         self.page_employees = QWidget()
@@ -1176,9 +1645,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_45.setContentsMargins(0, 0, 0, 0)
         self.label_list_title = QLabel(self.header_employee_list)
         self.label_list_title.setObjectName(u"label_list_title")
-        font8 = QFont()
-        font8.setPointSize(16)
-        font8.setBold(True)
         self.label_list_title.setFont(font8)
 
         self.horizontalLayout_45.addWidget(self.label_list_title, 0, Qt.AlignLeft)
@@ -1552,7 +2018,24 @@ class Ui_MainWindow(object):
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"PROFIT", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"PERMISSIONS", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"MANAGEMENT", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"ORDERS", None))
+        self.icon_credit_card.setText("")
+        self.label_credit_card.setText(QCoreApplication.translate("MainWindow", u"CREDIT CARD", None))
+        self.label_total_credit_card_orders.setText(QCoreApplication.translate("MainWindow", u"Total: 0", None))
+        self.label_order_product_1.setText(QCoreApplication.translate("MainWindow", u"Purchased Product 1", None))
+        self.label_order_price_1.setText(QCoreApplication.translate("MainWindow", u"+$20", None))
+        self.label_order_id_1.setText(QCoreApplication.translate("MainWindow", u"Order ID: #487129", None))
+        self.label_order_product_2.setText(QCoreApplication.translate("MainWindow", u"Purchased Product 2", None))
+        self.label_order_price_2.setText(QCoreApplication.translate("MainWindow", u"+$45", None))
+        self.label_order_id_2.setText(QCoreApplication.translate("MainWindow", u"Order ID: #091283", None))
+        self.icon_money.setText("")
+        self.label_money.setText(QCoreApplication.translate("MainWindow", u"MONEY", None))
+        self.label_total_money_orders.setText(QCoreApplication.translate("MainWindow", u"Total: 0", None))
+        self.label_order_product_3.setText(QCoreApplication.translate("MainWindow", u"Purchased Product 2", None))
+        self.label_order_price_3.setText(QCoreApplication.translate("MainWindow", u"+$45", None))
+        self.label_order_id_3.setText(QCoreApplication.translate("MainWindow", u"Order ID: #751987", None))
+        self.label_order_product_4.setText(QCoreApplication.translate("MainWindow", u"Refund Product 1", None))
+        self.label_order_price_4.setText(QCoreApplication.translate("MainWindow", u"-$20", None))
+        self.label_order_id_4.setText(QCoreApplication.translate("MainWindow", u"Order ID: #051548", None))
         self.label_list_title.setText(QCoreApplication.translate("MainWindow", u"Employees list", None))
         self.button_add_employee.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.icon_employee_picture_1.setText("")
